@@ -1,0 +1,2 @@
+from wizard_ai.pipeline import run_training_pipeline
+run_training_pipeline()

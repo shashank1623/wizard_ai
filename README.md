@@ -1,4 +1,4 @@
-# Video Summarization and Audio Conversion Web Application
+# Wizard.ai
 
 Your AI partner for subtitle generation and text summarization . This project provides a unique solution for video content consumers, offering transcription, summarization, and audio conversion of videos. Leveraging state-of-the-art technology and a user-centric design, the application promises accurate, relevant, and timely summaries to enhance content comprehension.
 

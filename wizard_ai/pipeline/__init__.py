@@ -1,5 +1,7 @@
 from wizard_ai.components.data_ingestion import DataIngestion
 from wizard_ai.components.data_validation import DataValidation
+from wizard_ai.components.data_preprocessing import DataProcessing 
+from wizard_ai.components.data_preprocessing import DataProcessingConfig
 import os, sys
 from dataclasses import dataclass
 
@@ -33,4 +35,8 @@ def run_training_pipeline(config=TrainingPipelineConfig):
     validator = DataValidation(dataset_folder=config.data_ingestion_artifacts)
     validator.check_dataset()
 
-    
+    # create an instance of the config dataclass for data processing component
+    data_processing_config = DataProcessingConfig(max_input_length=128, max_target_length=64, dataset_folder=config.data_ingestion_artifacts, artifacts_folder=config.data_processing_artifacts)
+    # create an instance of the 'DataProcessing' class and assigns variable as 'processor'.
+    processor = DataProcessing(data_processing_config)
+    processor.process_data()

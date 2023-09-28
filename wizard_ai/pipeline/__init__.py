@@ -2,6 +2,7 @@ from wizard_ai.components.data_ingestion import DataIngestion
 from wizard_ai.components.data_validation import DataValidation
 from wizard_ai.components.data_preprocessing import DataProcessing 
 from wizard_ai.components.data_preprocessing import DataProcessingConfig
+from wizard_ai.components.model_trainer import ModelTrainer
 import os, sys
 from dataclasses import dataclass
 
@@ -11,6 +12,7 @@ class TrainingPipelineConfig:
     artifacts_folder = 'artifacts'
     data_ingestion_artifacts = os.path.join(artifacts_folder, 'data_ingestion')
     data_processing_artifacts = os.path.join(artifacts_folder, "data_processing")
+    model_trainer_artifacts = os.path.join(artifacts_folder, "model_trainer")
 
 def create_directories(config=TrainingPipelineConfig):
     # Check if the artifacts folder exists
@@ -24,6 +26,10 @@ def create_directories(config=TrainingPipelineConfig):
     # Check and create the data processing artifacts folder
     if not os.path.exists(config.data_processing_artifacts):
         os.makedirs(config.data_processing_artifacts)
+    
+    # Check and create the model trainer artifacts folder
+    if not os.path.exists(config.model_trainer_artifacts):
+        os.makedirs(config.model_trainer_artifacts)
 
 def run_training_pipeline(config=TrainingPipelineConfig):
     # Create Directories
@@ -40,3 +46,9 @@ def run_training_pipeline(config=TrainingPipelineConfig):
     # create an instance of the 'DataProcessing' class and assigns variable as 'processor'.
     processor = DataProcessing(data_processing_config)
     processor.process_data()
+
+    # create an instance of the `ModelTrainer` class with the specified parameters.
+    trainer = ModelTrainer(model_checkpoint='facebook/bart-base', 
+                           processed_dataset_folder=config.data_processing_artifacts, 
+                           trainer_artifact_dir=config.model_trainer_artifacts)
+    trainer.train()

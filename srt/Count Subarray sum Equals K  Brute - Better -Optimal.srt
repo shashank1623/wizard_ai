@@ -1,0 +1,800 @@
+1
+0:00:00.000 --> 0:00:04.520
+Hey, we all come back to the channel.
+
+2
+0:00:04.520 --> 0:00:06.040
+I hope you guys are doing extremely well.
+
+3
+0:00:06.040 --> 0:00:09.560
+So this is another video from the Sprybles A2Z DSI course.
+
+4
+0:00:09.560 --> 0:00:12.720
+Just in case of the first time here, this is what's most in depth course when you talk
+
+5
+0:00:12.720 --> 0:00:15.400
+about DSI, go, why do I see that?
+
+6
+0:00:15.400 --> 0:00:17.880
+450, 5, this course is 450 by modem.
+
+7
+0:00:17.880 --> 0:00:22.000
+But the end of the course is a sort more than 400 plus problems in DSI, go even over the
+
+8
+0:00:22.000 --> 0:00:23.640
+entire internet you can buy.
+
+9
+0:00:23.640 --> 0:00:27.400
+Any of the paid courses, none of them will be teaching your DSI, go in such depth.
+
+10
+0:00:27.400 --> 0:00:29.360
+Something that I can give you as the assurance is.
+
+11
+0:00:29.360 --> 0:00:33.160
+Once you complete this entire course, you can create any of the DSI's drones in any
+
+12
+0:00:33.160 --> 0:00:35.640
+company, in any part of the world.
+
+13
+0:00:35.640 --> 0:00:39.840
+So till now, I have covered till this particular problem and this video will be covering
+
+14
+0:00:39.840 --> 0:00:40.840
+this one.
+
+15
+0:00:40.840 --> 0:00:46.840
+But before that, please make sure that you should have seen these two videos like this.
+
+16
+0:00:46.840 --> 0:00:51.600
+One single video, but you should know how to solve these couple of problems because the
+
+17
+0:00:51.600 --> 0:00:57.280
+solution to this particular problem is highly dependent on these couple of problems or this
+
+18
+0:00:57.280 --> 0:00:58.840
+one single video.
+
+19
+0:00:58.840 --> 0:01:00.600
+So please make sure you do watch it.
+
+20
+0:01:00.600 --> 0:01:02.200
+The link will be in the description.
+
+21
+0:01:02.200 --> 0:01:03.520
+So what is the problem state?
+
+22
+0:01:03.520 --> 0:01:05.000
+It's very clear by the name.
+
+23
+0:01:05.000 --> 0:01:09.440
+If to find the number of subaries, which gives you a sum k.
+
+24
+0:01:09.440 --> 0:01:12.760
+Now what is the definition of a subaray?
+
+25
+0:01:12.760 --> 0:01:17.480
+It means any contagious part of the array, very, very important word, any contagious part
+
+26
+0:01:17.480 --> 0:01:18.480
+of the array.
+
+27
+0:01:18.480 --> 0:01:19.480
+What does it mean?
+
+28
+0:01:19.480 --> 0:01:21.960
+If I take this, this is a subaray.
+
+29
+0:01:21.960 --> 0:01:24.360
+If I take this, this is a subaray.
+
+30
+0:01:24.360 --> 0:01:27.880
+If I take this portion, this is also a subaray.
+
+31
+0:01:27.920 --> 0:01:29.880
+Now I cannot say one, four, two.
+
+32
+0:01:29.880 --> 0:01:31.960
+Basically, one, four, two.
+
+33
+0:01:31.960 --> 0:01:34.360
+This is not a subaray.
+
+34
+0:01:34.360 --> 0:01:37.280
+Rather, it is a sub sequence.
+
+35
+0:01:37.280 --> 0:01:42.100
+So it's very important to understand the definition of subaray is, contagious part of the
+
+36
+0:01:42.100 --> 0:01:43.100
+array.
+
+37
+0:01:43.100 --> 0:01:44.880
+It can be the entire array as well.
+
+38
+0:01:44.880 --> 0:01:46.480
+It can be a single element as well.
+
+39
+0:01:46.480 --> 0:01:47.480
+It can be two elements.
+
+40
+0:01:47.480 --> 0:01:48.680
+It can be three elements.
+
+41
+0:01:48.680 --> 0:01:50.360
+It can be any portion of the array.
+
+42
+0:01:50.360 --> 0:01:52.040
+But it has to be contagiously taken.
+
+43
+0:01:52.040 --> 0:01:53.040
+Got it?
+
+44
+0:01:53.040 --> 0:01:56.920
+Let us take this particular example with k equal to three and try to analyze how many number
+
+45
+0:01:56.960 --> 0:01:59.840
+of subarays we can get with the sum equal to k.
+
+46
+0:01:59.840 --> 0:02:02.360
+So we are looking for a sum equal to three.
+
+47
+0:02:02.360 --> 0:02:06.960
+So I can say first I will take one and two, which will give me like, if I take this one,
+
+48
+0:02:06.960 --> 0:02:09.680
+it will definitely give me the sum as three.
+
+49
+0:02:09.680 --> 0:02:14.520
+Okay, can I take one, two, three minus three, yes I can.
+
+50
+0:02:14.520 --> 0:02:16.160
+Can I take something like three individually?
+
+51
+0:02:16.160 --> 0:02:17.440
+Yes I can.
+
+52
+0:02:17.440 --> 0:02:24.440
+Can I take something like two, three minus three, one, yes I can, which is this one?
+
+53
+0:02:24.440 --> 0:02:25.440
+3, we will go.
+
+54
+0:02:25.440 --> 0:02:28.440
+This will still give me the summation as k.
+
+55
+0:02:28.440 --> 0:02:33.440
+Can I take something as three, comma minus three, comma one, comma one, yes.
+
+56
+0:02:33.440 --> 0:02:36.440
+Can I take something as one, comma one, comma one, yes.
+
+57
+0:02:36.440 --> 0:02:38.440
+So do we see something else?
+
+58
+0:02:38.440 --> 0:02:39.440
+Yes, I do.
+
+59
+0:02:39.440 --> 0:02:45.440
+Something like four, comma two, comma minus three, which is basically this one.
+
+60
+0:02:45.440 --> 0:02:52.440
+And I also see one more, which is minus three, one, one, one, and then a four, two minus three.
+
+61
+0:02:52.440 --> 0:02:58.440
+Because even if you sum up this one minus three, this will go and then four plus two, six minus three, yes.
+
+62
+0:02:58.440 --> 0:03:01.440
+So I can see eight subarise.
+
+63
+0:03:01.440 --> 0:03:07.440
+So for this particular example, there will be exactly eight subarise, which will give me the sum as three.
+
+64
+0:03:07.440 --> 0:03:10.440
+It's very important to understand subarise means contagious.
+
+65
+0:03:10.440 --> 0:03:12.440
+What are the question cups of in an interview?
+
+66
+0:03:12.440 --> 0:03:14.440
+What are the first solution that will give to the interview?
+
+67
+0:03:14.440 --> 0:03:16.440
+That is definitely the fruitful solution.
+
+68
+0:03:16.440 --> 0:03:24.440
+For the extreme night solution that you can think of, it's generally do all the subarise and see how many are giving you some g.
+
+69
+0:03:24.440 --> 0:03:26.440
+So how do you generate all the subarise?
+
+70
+0:03:26.440 --> 0:03:29.440
+If you carefully observe, this is your first subarise.
+
+71
+0:03:29.440 --> 0:03:31.440
+This is your second subarise.
+
+72
+0:03:31.440 --> 0:03:37.440
+This is your third, this is your fourth, this is your fifth, this is your sixth, and goes on till the last.
+
+73
+0:03:37.440 --> 0:03:40.440
+Basically, it stops with one element.
+
+74
+0:03:40.440 --> 0:03:44.440
+Then adds one more, adds one more, adds one more, adds one more, and keeps on adding.
+
+75
+0:03:44.440 --> 0:03:53.440
+And then the next stops from doing, by taking just two, then takes two, three, two, three, minus three, goes on, goes on, goes on, and so on.
+
+76
+0:03:53.440 --> 0:04:00.440
+Next, stands of three, x three, three, minus three, then this, then this, then this, and keeps on going.
+
+77
+0:04:00.440 --> 0:04:02.440
+And eventually you can move this point.
+
+78
+0:04:02.440 --> 0:04:10.440
+So can I say, if I put a pointer, I over here, initially when I is here, the first subarise is the second, keep I, j here.
+
+79
+0:04:11.440 --> 0:04:13.440
+The next subarise is this, so I can move j.
+
+80
+0:04:13.440 --> 0:04:16.440
+The next subarise is this, I can go here.
+
+81
+0:04:16.440 --> 0:04:23.440
+Next subarise is this, and similarly I can move j till the last, which basically means, j started from here,
+
+82
+0:04:23.440 --> 0:04:27.440
+and j went on till the last index, which is n minus one.
+
+83
+0:04:27.440 --> 0:04:36.440
+And then what I can do is, I can move i away here, and I can again say, the j will be here, and then j will move, and eventually j will go till the end.
+
+84
+0:04:37.440 --> 0:04:41.440
+And at the next step, I can again move i, and j will be here, and j will go till the end.
+
+85
+0:04:41.440 --> 0:04:44.440
+So similarly, I can keep on moving i till the end, right?
+
+86
+0:04:44.440 --> 0:05:01.440
+So if I have to write, can I say, I will always start from zero, I will go till n minus one, rather n, and i plus plus, and the pole loop will be, for j will be, right, rho my till n minus one, and I'll go like this.
+
+87
+0:05:01.440 --> 0:05:30.440
+So can I say one thing for sure, if i is here, j is here, the subarise is only this much, and j moves here, the subarise is this, if j moves here, the subarise is this much, so can I surely say, that the subarise is from i to j, I definitely can say, so what I get, what I will do is, I'll keep the summation as zero, and I'll run a loop k from i to j, because i know the subarise is from i to j, and as a sum, equal to sum plus,
+
+88
+0:05:30.440 --> 0:05:40.440
+array of k, correct what this particular loop will do is, this will go through the entire subarise, and accumulate the sum.
+
+89
+0:05:40.440 --> 0:05:59.440
+Once you have collected the sum, outside the pole loop, you can say, if sum is equal to k, you do a counter plus plus, and this count can be initialized, right at the starting, this pole loop will end, and then this pole loop will end, so eventually this ends here, and then this ends here.
+
+90
+0:05:59.440 --> 0:06:07.440
+So what I can say is, once you have run the three nested loops, the counter will be storing the number of subarise with sum k, what what is the time complexity?
+
+91
+0:06:07.440 --> 0:06:28.440
+Can I say it's near about b go up n q, why? Because you are running near about three loops, it's not exactly n q, but it's some way near about n q, because first time it's trying for the entire nx, it's running for this, nx is running for this, so note exactly n q, but some way near about n q, so obviously the interview will not be happy with the n q, and you'll ask you to optimize it,
+
+92
+0:06:28.440 --> 0:06:57.440
+and this is when you'll move the d better solution, so what will be the better solution? Let's have some observations, what are we doing over here? We're saying i is here and j is here, and the first subarise this, then we are moving j to here, and we're seeing second subarise this, then we're seeing j is here and the third subarise this, then we're seeing j is over here and the fourth subarise this, and we are running a pole loop in order to accumulate the sum, but do we actually require the pole loop? Think carefully,
+
+93
+0:06:57.440 --> 0:07:26.440
+whenever i is here, j is here, what are you doing? You're iterating from i to j and accumulating the sum, but do you need to do that? Because initially the first subarise is having one, so can i say sum is one, and when j moves, can i say the second subarise will be one two, so there is only an addition of two, so just add two, then when j moves, then in the third subarise there is just an addition of three, so add three, then when j moves, there is just an addition of minus three,
+
+94
+0:07:26.440 --> 0:07:50.440
+so just add minus three, so what you can do is, instead of accumulating the sum by running a loop from i to j, you can say, hey listen, i will not accumulate every time, instead of that, i'll keep a summation zero, and every time there is an addition, yes, this is every time there is an addition, i will just add that number, because i know initially this much, then two will get added, then three, then minus three, then one, so every time there is an addition,
+
+95
+0:07:50.440 --> 0:08:07.440
+so every time the number gets added, so every time, instead of accumulating separately by running a loop, you can directly add it, and then you can check, so i have decreased the inner loop, what is the time complexity?
+
+96
+0:08:07.440 --> 0:08:36.940
+So when you are about b go off n square, somewhere near about b go off n square, are we using some extra space? No, but the interior will not be happy with the b go off n square, and it will ask you to optimize it, this is when you will move to the optimal one, so it's time to discuss the most optimal solution, the most optimal solution will be using the concept of prefix sum, in case you don't know about it, i've already explained it in depth, in this particular video, i'll be leaving the video link in the description, pause this particular video,
+
+97
+0:08:36.940 --> 0:08:51.940
+go back and watch it, and then you can come back over, so what is the concept of prefix sum? Let's understand that, so as you might say, i'll go till this particular element, and if i ask you, what is the summation of all the prefix elements?
+
+98
+0:08:51.940 --> 0:09:14.940
+So basically 1 plus 2 3 plus 3 6 minus 3 3 4 5 6, so i can say the prefix summation is 6, and can i say, the summation of these three elements is 3 i can, i can say, the summation of these three elements are 3, and if i ask you, what is the song of these elements?
+
+99
+0:09:14.940 --> 0:09:42.940
+The remaining elements, please do not add it up, please do not add up single elements, and just asking you as a normal max, if the proton summation is 6, and this one's sum is 3, how much will this be? 3, because this minus this will give you 3, and this is the concept that i'll be using, so what i'll try to look forward is, i know, till a particular index, we will have a prefix sum,
+
+100
+0:09:42.940 --> 0:09:59.940
+we will have a prefix sum as x as u, and i know, i'm looking for, i know, looking for a sub array with some k, so what is the remaining portion?
+
+101
+0:10:00.940 --> 0:10:27.940
+What will be the sum of the remaining portion? Can i see it will be x minus k, i can, because if the prefix sum till here is x, and pro-baply, there is a sub array, pro-baply, where go over here there was a sub array, over here there was a sub array, that's why the sum, the sum gain as ring, what if there is a sub array, who sum is k, then in the back word, there will always be a prefix sum, there will always be a prefix sum till here,
+
+102
+0:10:27.940 --> 0:10:47.940
+which will have a summation of x minus k, there will be a prefix sum will always be x minus k, similarly if i have to visualize it again, can i see this, if i just rub it off, can i see this, till here, all through the summation is 3, thereby these two elements will also give you how much?
+
+103
+0:10:47.940 --> 0:11:16.940
+6 minus 3, which is 3, agreed, what did you observe? You observed one thing, the total summation was 6, and there was, i was looking for 3, i was looking for 3, because we were looking for a sub array, which answered this index, we are looking for a sub array, which answered this index, and apparently over here, there was one, which was ending over here,
+
+104
+0:11:17.940 --> 0:11:47.860
+and there was other one, which was ending over here, so if there are two sub arrays, which are ending at here with a summation of 3, if there are two sub arrays, which is ending at here with a summation of 3, can i see, there will be two sub arrays, there will be two prefix sum of x minus k, i can, we had till here 3, we had till here 3, i can, right, because there was two,
+
+105
+0:11:47.860 --> 0:12:06.740
+because there was two, send the backward, there will also be two, there will also be two, with the same sum, with the same sum, so can i see, if i am looking for k over here, so instead of looking for k, because it somewhere in the middle,
+
+106
+0:12:06.740 --> 0:12:29.700
+i will look for prefix sum, how many are x minus k, how many are x minus k, like in this case, let's again go back, like in this case, what did we see, we are 3, but instead of looking for 3, if i just erase it off, and this is 3, so basically what i'm saying is,
+
+107
+0:12:29.700 --> 0:12:47.140
+till here the prefix sum was 3, until here the prefix sum was 3, so i know there was 6, as looking for 3, send the backward, there was two elements with 3, there was two elements with 6 minus k, there were two sub prefix 6 minus k,
+
+108
+0:12:47.140 --> 0:12:57.540
+that means there will be two sub elements, one is this, and the other one is this, this is the reverse engineering, we just did the reverse engineering, what did we see,
+
+109
+0:12:57.540 --> 0:13:16.500
+we said, if till up point, the prefix sum is s, and i am looking for k, so in order to figure out how many k are there, i will look out, how many s minus k are there,
+
+110
+0:13:16.500 --> 0:13:36.500
+how many s minus k, the number of s minus k will be equivalent to the number of k, over here, 3, 1, 2, so it's equivalent, if you take this, this will be the other sub array, if you take this, this will be the other sub array, so i did look in the opposite direction,
+
+111
+0:13:36.500 --> 0:13:46.500
+why did i look in the opposite direction, because we kept easy to install the prefix sum, we can easily store the prefix sum, but we cannot find out a,
+
+112
+0:13:46.500 --> 0:14:02.500
+between sub, that's not possible, that is why, and i hope you kind of got the intuition, in case you did not do not worry about it, the moment i do the dryron, everything will get Christine fear, so let us quickly do a dryron on the algorithm, so what are the data structures that we require,
+
+113
+0:14:02.500 --> 0:14:32.460
+so if you remember, here we had a prefix sum as s, and we were looking for a sub array with some k, so previously i was looking for, if there is an occurrence of s minus k, if you remember properly, and that means we are looking for, was there a prefix sum, we were looking for, did it happen in the past, so what better than a hash map, so we will be using a data structure as hash map, which will be storing prefix sum, how many times get darker, and that will be count,
+
+114
+0:14:32.500 --> 0:14:58.500
+why and everything you will understand as you will forward in the dryron, and we will take two variables, one that keeps a track of, what is the prefix sum, the other that keeps a track of the number of sub arrays, so initially the prefix sum is 0, so please make sure you enter 0 as 1, saying, there is a prefix of 0 and count as 1, why, because initially when we started, we did not pick up anyone, and you will understand the significance of 0 as we move forward,
+
+115
+0:14:58.500 --> 0:15:20.500
+so initially we will be standing at 1, so let us add it to the prefix sum as 1, so what i will be saying, we have some elements향 that gives us a prefix sum of 1, so in that sum element we will look for a sub array that insert this index with a summation of k, so the previous, there must be some previous elements, which can be excluded who has a sum of s minus k agreed, because if this is s, and if i'm looking for a k, that's a sum, and if i'm looking for k, this is a sum, and if i'm looking for k, then we will hand this.
+
+116
+0:15:20.500 --> 0:15:27.860
+which can be excluded who has a sum of s minus k agreed because if this is s and if I'm
+
+117
+0:15:27.860 --> 0:15:35.100
+looking for k the excluded people should be s minus k which is 1 minus 3 that is minus 2.
+
+118
+0:15:35.100 --> 0:15:39.740
+Do we have a minus 2? Do we have any previous elements that gives you to pick some minus 2?
+
+119
+0:15:39.740 --> 0:15:47.100
+No, so not possible. Next, take one and put it as 1, 1.
+
+120
+0:15:47.100 --> 0:15:51.100
+So, there is a prefix sum of 1 at a equals 1. Perfect. Let's move it.
+
+121
+0:15:51.100 --> 0:15:56.540
+So we have a 2. Now, if we have a 2, we added to the prefix sum. Saying we have a summation
+
+122
+0:15:56.540 --> 0:16:02.700
+3. What are we saying? We are saying there are some elements which gives me a sum as 3.
+
+123
+0:16:02.700 --> 0:16:10.220
+I'm looking for some elements which answer this particular index who gives me a sum of k.
+
+124
+0:16:10.220 --> 0:16:16.020
+So I need to exclude elements with a summation of s minus k. Then only I'll get k. So what
+
+125
+0:16:16.020 --> 0:16:20.820
+is this? 3. What is k? 3. So it will exclude elements which gives me a summation of 0.
+
+126
+0:16:20.820 --> 0:16:28.260
+That means no elements. That's why storing the 0 has significance. Got it? So the call
+
+127
+0:16:28.260 --> 0:16:34.900
+will increase by 1 because there is 1. So there can be 1 prefix sum which I'll remove will
+
+128
+0:16:34.900 --> 0:16:40.660
+give me this one. So done. Next, please take 3 and put it over here. Let's move.
+
+129
+0:16:40.740 --> 0:16:47.220
+We have a 3 again. Let's add it up 6. So this time we have a summation of 6 and we are looking
+
+130
+0:16:47.220 --> 0:16:55.460
+for k equal to 3. So we have to remove s minus k. If we remove elements with sum up s minus k.
+
+131
+0:16:55.460 --> 0:17:02.020
+So what is s? 6 for this k? So if we remove prefix sum 3. So that is we have we got it.
+
+132
+0:17:02.020 --> 0:17:06.820
+Got it once. That is very imminent because if you remove this, you'll just have this one.
+
+133
+0:17:06.900 --> 0:17:13.940
+So this is why this works thereby since 3 occurs once the count will increase where 1 and 6 will
+
+134
+0:17:13.940 --> 0:17:20.580
+go as 1. Perfect. Let's move it. The moment you move where there's a minus 3. Take this minus
+
+135
+0:17:20.580 --> 0:17:26.500
+3 added up. What do you get? 3. And if you're getting 3, this is the moment you start again looking
+
+136
+0:17:26.580 --> 0:17:36.340
+forward. You're like total 3 looking for 3. How many explored? Anyone who gives you summation of
+
+137
+0:17:36.340 --> 0:17:41.780
+0. Explode any one who gives you summation of 0. And we just have one which an exclusion gives me
+
+138
+0:17:41.780 --> 0:17:48.580
+a summation of 0 which is no one. So thereby, so there's only one addition. Perfect. And there's 3.
+
+139
+0:17:49.220 --> 0:17:53.860
+Increase the call. Do not put it into the hash map. Increase the call. Next move. We have a one.
+
+140
+0:17:54.500 --> 0:17:59.620
+So summation increases to 4. What are we looking for? We're looking for 4. And we know we are
+
+141
+0:17:59.620 --> 0:18:06.500
+looking for k. So we're looking for s minus k which is 4 minus 3 which is 1 and we have it.
+
+142
+0:18:06.500 --> 0:18:12.100
+We have it which is this single element. If you exclude this single element, these elements will
+
+143
+0:18:12.100 --> 0:18:18.580
+give you some value with some k. It will. So there's one element. Increase and still full come
+
+144
+0:18:18.740 --> 0:18:24.580
+a one. Let's move. We have a 5. This time we have a 5. If you have a 5, you're looking to
+
+145
+0:18:24.580 --> 0:18:31.700
+remove how much elements which give you some 3. Do you have to do you have to know nothing to
+
+146
+0:18:31.700 --> 0:18:39.860
+be done. Just take 5. Including the hash map and move where 6. Very important point. You have 6.
+
+147
+0:18:41.060 --> 0:18:46.420
+You know you will be requiring 3. So you have to remove elements which will give you summation of
+
+148
+0:18:46.900 --> 0:18:52.500
+and there are 2 occurrences. If you see there are 2 occurrences. If you remove this, this gives you
+
+149
+0:18:52.500 --> 0:18:58.980
+summation of 3. If you remove this, this also gives you summation of 3. So there are 2 occurrences.
+
+150
+0:18:58.980 --> 0:19:05.780
+This is why I was storing count. So there are 2 occurrences which on removal can give you
+
+151
+0:19:05.780 --> 0:19:12.420
+this particular sum and then you will be ending up with 3. So add up to 6 sub-array's found.
+
+152
+0:19:12.500 --> 0:19:17.300
+So the 6 are added. The number of sub-array's. What is the next term? Add 1. So 6 will be added.
+
+153
+0:19:17.300 --> 0:19:22.100
+Over here, please make sure add 6 over here instead of adding it again into the hash here.
+
+154
+0:19:22.100 --> 0:19:29.140
+It's 2 forward. We have a 4. 10. If we have a 10, we are looking for 3. So we have to remove 7. Do
+
+155
+0:19:29.140 --> 0:19:35.700
+we have a 7. No, we don't have a 7. Not to be done. Put up 10 and move forward. So we have a 12.
+
+156
+0:19:36.260 --> 0:19:41.540
+What do we have? 12. We are looking for 3. We have to remove something of 9. Do we have a 9? Do we have
+
+157
+0:19:41.860 --> 0:19:50.100
+a 9? No. 12. Come on. Next. Move back. You have to remove. You have to add minus 3. So it's 9.
+
+158
+0:19:50.580 --> 0:19:56.100
+So an addition of minus 3, you get 9. So it's basically you have a 9 and you're looking for
+
+159
+0:19:56.100 --> 0:20:02.820
+3. So the remaining is 6. You have to remove elements who are giving you some summation of 6.
+
+160
+0:20:02.820 --> 0:20:09.380
+And it's twice, one share, one share. It's basically once you remove this. This sub-array also gives you
+
+161
+0:20:09.700 --> 0:20:15.860
+a summation of 3. Even if you remove everyone, this also gives you a summation of 6.
+
+162
+0:20:15.860 --> 0:20:22.020
+There are 2 more of currencies. Go ahead and add it up. Once you've done this, put into the
+
+163
+0:20:22.020 --> 0:20:28.180
+one and your iteration is over. Once your iteration is over, the count will be storing your answer.
+
+164
+0:20:28.180 --> 0:20:36.500
+This is why I said storing of count is very, very important. And also storing of 0 is also very,
+
+165
+0:20:36.500 --> 0:20:41.780
+very high significance. And if you want to know why, I'll just give you a shuttle example. You can
+
+166
+0:20:41.780 --> 0:20:48.980
+try it out at your home. So take this example, 3 minus 3, 1, 1, 1, 1, 1, 1, 1. Take this example.
+
+167
+0:20:48.980 --> 0:20:56.740
+And you will see what will happen if you do not store 0. Please try out this example. Do
+
+168
+0:20:56.740 --> 0:21:03.220
+a draw and you'll understand why storing 0 is very, very important. So the entire logic is super
+
+169
+0:21:04.180 --> 0:21:10.820
+you have a prefix sum which is the entire sum till a particular index. And you're looking for k.
+
+170
+0:21:10.820 --> 0:21:17.620
+So you'll just look for how many times s minus k appeared. And that will be the number of sub-arrays
+
+171
+0:21:17.620 --> 0:21:22.980
+that ends at this particular index. That is what the intuition was. So let's quickly go back to the
+
+172
+0:21:22.980 --> 0:21:27.300
+code editor and try to code it up again. You can find the problem like in the description. Please
+
+173
+0:21:27.300 --> 0:21:32.660
+make sure you try out the problem from the link in the description. So we will take a map and
+
+174
+0:21:32.660 --> 0:21:39.220
+you can also take an unordered map. And initially I will say map of 0 is equal to 1. Let's store
+
+175
+0:21:39.220 --> 0:21:45.780
+up a prefix sum as 0 and let's store account as 0. And at the end of the day we will return the count.
+
+176
+0:21:45.780 --> 0:21:52.020
+Let's now quickly start the iteration. So we will iterate throughout the array. So this is how we
+
+177
+0:21:52.020 --> 0:21:57.780
+will iterate. And we even say prefix sum plus equal to array of i every dynamic taken.
+
+178
+0:21:57.860 --> 0:22:02.820
+And what am I looking for? What am I looking to remove if I ask you on the back course?
+
+179
+0:22:02.820 --> 0:22:08.180
+What am I looking for remove? It's very simple. I'll try to remove this one. So it's basically
+
+180
+0:22:08.180 --> 0:22:16.980
+stating if i can get how many are there with this removal? We come in initial prefix sums are there
+
+181
+0:22:16.980 --> 0:22:22.100
+which can be removed. And that will be my count of sub-arrays. And before going ahead what I'll say is mbb
+
+182
+0:22:22.740 --> 0:22:28.900
+prefix sum can you just update yourself in the hash map? Once this is done I can just return it
+
+183
+0:22:28.900 --> 0:22:34.020
+and that will be it. It's highly a four-lane code and it solves the entire problem.
+
+184
+0:22:35.220 --> 0:22:40.900
+So much of logic but four-lane sub-code. So what will be the time complexity? I can say we are
+
+185
+0:22:40.900 --> 0:22:47.860
+linearly iterating on the array. That is going to take a b go off n and for the unordered map we know
+
+186
+0:22:47.940 --> 0:22:52.900
+the average case is b go off one. Yeah the worst case in case the police can be b go off n. So
+
+187
+0:22:52.900 --> 0:22:56.900
+depending on that you can explain to the interviewer that if we take the simple map it will be
+
+188
+0:22:56.900 --> 0:23:02.420
+logarithmic of n. If it's a counter-admap the best in the average will be b go off one for map but
+
+189
+0:23:02.420 --> 0:23:08.100
+the worst might be b go off n. So depending on what complexity you assume for the map the logger
+
+190
+0:23:08.100 --> 0:23:13.780
+the main thing will alter. So that will be the time complexity whatever the space complexity
+
+191
+0:23:13.780 --> 0:23:19.060
+using a map to store all the prefix sums. So the worst case all the prefix sums can be different
+
+192
+0:23:19.060 --> 0:23:24.660
+and we might end up storing n prefix sums. So that will be the space complexity this will be the
+
+193
+0:23:24.660 --> 0:23:29.380
+time complexity and we cannot do anything better than that. So going back to the sheet I can say
+
+194
+0:23:29.380 --> 0:23:34.660
+that this particular problem is completed with this we wrap up the medium section of arrays as well.
+
+195
+0:23:34.660 --> 0:23:39.220
+I hope you have understood all the three approaches just in case you did. Please please consider
+
+196
+0:23:39.220 --> 0:23:43.540
+giving us that like because it won't cost you anything but that will motivate me a lot
+
+197
+0:23:43.540 --> 0:23:48.580
+to make these kind of videos and if you need to watch out what I'm waiting for hit that subscribe button
+
+198
+0:23:48.580 --> 0:23:52.260
+and to continue our tradition please make sure you do comment and understood and if you haven't
+
+199
+0:23:52.260 --> 0:23:56.580
+followed me on Instagram, Twitter and LinkedIn all the ideas will be in the description
+
+200
+0:23:56.580 --> 0:24:08.580
+with this I'll be wrapping up this video let's be in some of the videos and then we'll buy a ticket.
+

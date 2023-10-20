@@ -7,13 +7,6 @@ Your AI partner for subtitle generation and text summarization . This project pr
 1. **Video Transcription using OpenAI's Whisper**: Transcribe any video into text.
 2. **Fine-tuned BART Model for Video Summarization**: Transform long video transcriptions into concise summaries.
 3. **Audio Conversion**: Convert the summarized text back into audio format for on-the-go consumption.
-4. **Real-time Summarization**: Get instantaneous summaries while the video plays.
-5. **Video Segmentation**: Segment videos based on user-inputted keywords.
-6. **Intuitive User Interface**: Allows users to input keywords, creating a seamless experience.
-7. **Automated Playlist Generation**: Create playlists based on user-inputted keywords.
-8. **User Feedback Loop**: Users can provide feedback on the quality and relevance of the generated content, driving continuous improvement.
-9. **Multi-Language Support**: Summarize and transcribe videos from multiple languages.
-10. **Customization Options**: Users can influence the outcome of the summarization process.
 
 ## Objectives
 

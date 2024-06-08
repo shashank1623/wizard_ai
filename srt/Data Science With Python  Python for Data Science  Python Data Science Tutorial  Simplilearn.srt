@@ -1,0 +1,2788 @@
+1
+0:00:00.000 --> 0:00:08.240
+Hello and welcome to this session on data science with Python.
+
+2
+0:00:08.240 --> 0:00:10.240
+So what are we going to do in this session?
+
+3
+0:00:10.240 --> 0:00:15.520
+We will talk about what is data science and some of the basics of Python as you may be
+
+4
+0:00:15.520 --> 0:00:17.240
+aware data science.
+
+5
+0:00:17.240 --> 0:00:22.040
+We use either Python or R as some of the tools and programming languages.
+
+6
+0:00:22.040 --> 0:00:24.560
+So this session, the focus is on Python.
+
+7
+0:00:24.560 --> 0:00:29.800
+So we will talk about the basics of Python, white-alone Python, how to install Python.
+
+8
+0:00:29.800 --> 0:00:36.280
+And then we will talk about some of the important libraries which are required for data analysis.
+
+9
+0:00:36.280 --> 0:00:40.600
+And then we will go into a little bit of details about exploratory data analysis.
+
+10
+0:00:40.600 --> 0:00:44.800
+And we will take an example there of loan prediction.
+
+11
+0:00:44.800 --> 0:00:51.840
+And we will see a little bit about data wrangling using pandas, which is one of the libraries of Python.
+
+12
+0:00:51.840 --> 0:00:56.800
+And then we will end up with small predictive model or logistic regression model, which
+
+13
+0:00:56.800 --> 0:00:58.880
+is part of machine learning.
+
+14
+0:00:58.880 --> 0:01:04.520
+And in case you need more details about machine learning in this session, we will probably
+
+15
+0:01:04.520 --> 0:01:07.080
+not go into the details of machine learning.
+
+16
+0:01:07.080 --> 0:01:08.680
+There is a separate session.
+
+17
+0:01:08.680 --> 0:01:09.920
+You might want to look at.
+
+18
+0:01:09.920 --> 0:01:12.160
+There is a separate video on machine learning.
+
+19
+0:01:12.160 --> 0:01:13.680
+You might want to take a look at that.
+
+20
+0:01:13.680 --> 0:01:18.560
+If you need more details, here we are just giving a quick overview to see how we can use
+
+21
+0:01:18.560 --> 0:01:20.160
+the psychic learn library.
+
+22
+0:01:20.160 --> 0:01:23.880
+So we will not go into a lot of details about the basics of machine learning.
+
+23
+0:01:23.880 --> 0:01:24.880
+All right.
+
+24
+0:01:24.880 --> 0:01:26.160
+So with that, let's move forward.
+
+25
+0:01:26.160 --> 0:01:28.040
+So what is data science?
+
+26
+0:01:28.040 --> 0:01:31.960
+Data science is about finding insights from the data.
+
+27
+0:01:31.960 --> 0:01:38.200
+So if there is a lot of data, if you have sufficient data, how to analyze and find some insights
+
+28
+0:01:38.200 --> 0:01:41.280
+out of it, this is what is data science all about.
+
+29
+0:01:41.280 --> 0:01:43.800
+A couple of examples here, customer prediction.
+
+30
+0:01:43.800 --> 0:01:46.920
+Now let's say you have a customer base.
+
+31
+0:01:46.920 --> 0:01:50.280
+And you want to find out who are most likely to buy your product.
+
+32
+0:01:50.280 --> 0:01:53.240
+So you can use from your past behavior.
+
+33
+0:01:53.240 --> 0:01:58.240
+You can probably develop a model and try to predict who are the people out of the
+
+34
+0:01:58.240 --> 0:02:03.040
+thousand leads or potential customers who will actually buy.
+
+35
+0:02:03.040 --> 0:02:05.640
+So there may be some patterns that you can use to print it.
+
+36
+0:02:05.640 --> 0:02:07.160
+Similarly, service planning.
+
+37
+0:02:07.160 --> 0:02:11.880
+So for example, you're running a restaurant and you want to know how many people will
+
+38
+0:02:11.880 --> 0:02:16.160
+be coming or how many customers will be visiting your restaurant or even day.
+
+39
+0:02:16.160 --> 0:02:20.800
+Now based on your historical data, you can build a model to predict that as well.
+
+40
+0:02:20.800 --> 0:02:23.760
+So that there is no wastage of food and so on and so forth.
+
+41
+0:02:23.760 --> 0:02:30.240
+So these are very quick and easy examples of how data science can be used in business.
+
+42
+0:02:30.240 --> 0:02:32.280
+Now let's talk about Python.
+
+43
+0:02:32.280 --> 0:02:37.840
+For doing data science, we need some kind of a programming language or a tool and so on.
+
+44
+0:02:37.840 --> 0:02:40.560
+So this session will be about Python.
+
+45
+0:02:40.560 --> 0:02:44.960
+There are other tools like for example, R and we will probably do a separate video on that.
+
+46
+0:02:45.040 --> 0:02:49.760
+And the session is on Python and you must have already heard Python is really becoming very
+
+47
+0:02:49.760 --> 0:02:50.760
+popular.
+
+48
+0:02:50.760 --> 0:02:56.200
+Everybody is talking about Python, not only data science in IoT and AI in many other places.
+
+49
+0:02:56.200 --> 0:02:58.960
+So it's a very popular getting very popular.
+
+50
+0:02:58.960 --> 0:03:04.080
+So if you are not yet familiar with Python, this may be a good time to get started with it.
+
+51
+0:03:04.080 --> 0:03:05.960
+So why do we want to use Python?
+
+52
+0:03:05.960 --> 0:03:13.000
+So basically, Python is used as a programming language because it is for data science because
+
+53
+0:03:13.080 --> 0:03:18.080
+it has some rich tools from mathematics and from a statistical perspective.
+
+54
+0:03:18.080 --> 0:03:19.480
+It has some rich tools.
+
+55
+0:03:19.480 --> 0:03:22.360
+So that is one of the reasons why we use Python.
+
+56
+0:03:22.360 --> 0:03:26.840
+And if you see some of the trends, if you're probably tracking some of the trends,
+
+57
+0:03:26.840 --> 0:03:31.640
+you will see that over the last few years, Python has become programming language of choice.
+
+58
+0:03:31.640 --> 0:03:33.560
+And especially for data science,
+
+59
+0:03:33.560 --> 0:03:36.480
+says was earlier one of the most popular tools.
+
+60
+0:03:36.480 --> 0:03:40.800
+But now increasingly, Python is being used for doing data science.
+
+61
+0:03:40.800 --> 0:03:42.520
+And of course, as well as R.
+
+62
+0:03:42.520 --> 0:03:46.080
+One of the reasons, of course, is that Python and R are open source,
+
+63
+0:03:46.080 --> 0:03:48.760
+compared to SAS, which is a commercial product.
+
+64
+0:03:48.760 --> 0:03:51.680
+So that could definitely be one explanation.
+
+65
+0:03:51.680 --> 0:03:55.080
+But beyond that, I think it is the ease of understanding this language,
+
+66
+0:03:55.080 --> 0:03:58.240
+the ease of using this language, which is also making it very popular.
+
+67
+0:03:58.240 --> 0:04:03.040
+In addition to the availability of fantastic libraries for performing data science.
+
+68
+0:04:03.040 --> 0:04:04.280
+What are the other factors?
+
+69
+0:04:04.280 --> 0:04:09.000
+There are speed, then there are availability of number of packages.
+
+70
+0:04:09.000 --> 0:04:11.480
+And then of course, the design goal.
+
+71
+0:04:11.480 --> 0:04:12.320
+All right.
+
+72
+0:04:12.320 --> 0:04:14.640
+So what are each of these design goals?
+
+73
+0:04:14.640 --> 0:04:19.640
+Primarily, the syntax rules in Python are relatively intuitive.
+
+74
+0:04:19.640 --> 0:04:20.720
+And easy to understand.
+
+75
+0:04:20.720 --> 0:04:25.760
+They're by it helps in building applications with the concise and readable code
+
+76
+0:04:25.760 --> 0:04:26.120
+base.
+
+77
+0:04:26.120 --> 0:04:27.760
+So it's a few lines of code.
+
+78
+0:04:27.760 --> 0:04:29.480
+You can really achieve a lot of stuff.
+
+79
+0:04:29.480 --> 0:04:33.360
+And then there are a lot of packages that are available that have been developed
+
+80
+0:04:33.360 --> 0:04:35.760
+by other people, which can be reused.
+
+81
+0:04:35.760 --> 0:04:37.880
+So we don't have to reinvent the wheel.
+
+82
+0:04:37.880 --> 0:04:40.240
+And last but not least, speed.
+
+83
+0:04:40.240 --> 0:04:43.200
+So Python is relatively faster language.
+
+84
+0:04:43.200 --> 0:04:46.480
+Of course, it is not as fast as, let's say, CFC++.
+
+85
+0:04:46.480 --> 0:04:48.880
+But then relatively, it is still faster.
+
+86
+0:04:48.880 --> 0:04:53.960
+So these are the three factors, which may Python the programming language of choice.
+
+87
+0:04:53.960 --> 0:04:58.760
+So if you want to get started with Python, first thing obviously is to install Python.
+
+88
+0:04:58.760 --> 0:05:00.520
+So there is some documentation.
+
+89
+0:05:00.520 --> 0:05:02.720
+And there are some steps that you need to follow.
+
+90
+0:05:02.720 --> 0:05:05.080
+So we will try to briefly touch upon that.
+
+91
+0:05:05.080 --> 0:05:09.040
+Otherwise, of course, there is a lot of material available on how to install Python.
+
+92
+0:05:09.040 --> 0:05:10.840
+So on, you can always look around.
+
+93
+0:05:10.840 --> 0:05:12.120
+But this is one of the game.
+
+94
+0:05:12.120 --> 0:05:14.960
+There are different ways in which you can also install Python.
+
+95
+0:05:14.960 --> 0:05:17.880
+So we will use the anaconda path.
+
+96
+0:05:17.880 --> 0:05:20.480
+There is a packaging tool called anaconda.
+
+97
+0:05:20.480 --> 0:05:22.600
+So we will use that path.
+
+98
+0:05:22.600 --> 0:05:24.680
+You can also directly install Python.
+
+99
+0:05:24.680 --> 0:05:27.680
+But in our session, we will use the anaconda route.
+
+100
+0:05:27.680 --> 0:05:30.440
+So the first thing you need to do is download anaconda.
+
+101
+0:05:30.440 --> 0:05:32.080
+And this is the path for that.
+
+102
+0:05:32.080 --> 0:05:37.040
+And once you click on this, you will come to a page somewhat like this.
+
+103
+0:05:37.040 --> 0:05:41.840
+And download, you can do the corresponding download based on whether you have a windows or
+
+104
+0:05:41.840 --> 0:05:42.840
+Ubuntu.
+
+105
+0:05:42.840 --> 0:05:47.920
+There is also a download possible for a package available for Ubuntu if you're doing something
+
+106
+0:05:47.920 --> 0:05:48.920
+on Ubuntu.
+
+107
+0:05:48.920 --> 0:05:51.160
+So based on which operating system.
+
+108
+0:05:51.160 --> 0:05:55.120
+In fact, this page will automatically detect which operating system you're having.
+
+109
+0:05:55.120 --> 0:05:56.560
+And it will actually suggest.
+
+110
+0:05:56.560 --> 0:06:01.120
+So for example, you see here, if you're running macOS, then it will automatically detect
+
+111
+0:06:01.120 --> 0:06:04.680
+that you have macs and the corresponding installers will be displayed here.
+
+112
+0:06:04.720 --> 0:06:09.760
+Similarly, if you're on some flavor of linux, like Ubuntu or any other, then you will get
+
+113
+0:06:09.760 --> 0:06:11.920
+the corresponding download links here.
+
+114
+0:06:11.920 --> 0:06:16.440
+And then beyond that, you can also select which version of Python you want to install.
+
+115
+0:06:16.440 --> 0:06:21.800
+Of course, the latest version is in the 3.x range at the time of recording.
+
+116
+0:06:21.800 --> 0:06:24.800
+This 3.6 is one of the latest versions.
+
+117
+0:06:24.800 --> 0:06:30.760
+But some of you may want to do or start with the earlier version, which is Python 2.7 to
+
+118
+0:06:30.840 --> 0:06:31.400
+.text.
+
+119
+0:06:31.400 --> 0:06:33.880
+And you can download that as well.
+
+120
+0:06:33.880 --> 0:06:39.160
+If you don't have anything installed, then my suggestion is start with Python 3.6.
+
+121
+0:06:39.160 --> 0:06:39.640
+All right.
+
+122
+0:06:39.640 --> 0:06:46.440
+So once you do that, you will be able to install Python and you will be able to run
+
+123
+0:06:46.440 --> 0:06:47.640
+Jupiter notebook.
+
+124
+0:06:47.640 --> 0:06:48.040
+Okay.
+
+125
+0:06:48.040 --> 0:06:54.200
+So now that you know how to install Python and you if you have installed Python, let's
+
+126
+0:06:54.200 --> 0:06:57.320
+take a look at what are the various libraries that are available.
+
+127
+0:06:57.400 --> 0:07:00.440
+So Python is a very easy language to learn.
+
+128
+0:07:00.440 --> 0:07:03.080
+And there are some basic stuff that you can do.
+
+129
+0:07:03.080 --> 0:07:08.520
+For example, adding, operating a hollow world statement and so on without importing any
+
+130
+0:07:08.520 --> 0:07:09.880
+specific libraries.
+
+131
+0:07:09.880 --> 0:07:16.600
+But if you want to perform data analysis, you need to include or import some specific libraries.
+
+132
+0:07:16.600 --> 0:07:19.640
+So we are going to talk about those as we move forward.
+
+133
+0:07:19.640 --> 0:07:24.360
+So pandas, for example, is used for structured data operation.
+
+134
+0:07:24.360 --> 0:07:29.880
+So if you let's say are performing something on a CSV file, you import a CSV file,
+
+135
+0:07:29.880 --> 0:07:31.080
+create a data frame.
+
+136
+0:07:31.080 --> 0:07:36.680
+And then you can do a lot of stuff like data munching and data preparation before you do any
+
+137
+0:07:36.680 --> 0:07:39.480
+other stuff like for example, machine learning or so on.
+
+138
+0:07:39.480 --> 0:07:41.080
+So that's pandas.
+
+139
+0:07:41.080 --> 0:07:45.960
+Side pie as the name suggests, it is kind of it provides more scientific capabilities.
+
+140
+0:07:45.960 --> 0:07:51.240
+Like for example, it has linear algebra, it has Fourier transform and so on and so forth.
+
+141
+0:07:51.240 --> 0:07:57.880
+Then you have NumPy which is a very powerful library for performing and dimensional or creating
+
+142
+0:07:57.880 --> 0:07:59.160
+and dimensional arrays.
+
+143
+0:07:59.160 --> 0:08:02.360
+And it also has some of the stuff that is there in sci-fi.
+
+144
+0:08:02.360 --> 0:08:06.360
+Like for example, linear algebra and Fourier transform and so on and so forth.
+
+145
+0:08:06.360 --> 0:08:11.560
+Then you have MATLAB which is primarily for visualization purpose.
+
+146
+0:08:11.560 --> 0:08:17.480
+It has again very powerful features for visualizing your data for doing the initial
+
+147
+0:08:17.480 --> 0:08:23.400
+what is known as exploratory data analysis for doing univariate analysis by variate analysis.
+
+148
+0:08:23.400 --> 0:08:26.680
+So this is extremely useful for visualizing the data.
+
+149
+0:08:26.680 --> 0:08:31.320
+And then sci-kit learn is used for performing all the machine learning activities.
+
+150
+0:08:31.320 --> 0:08:36.680
+If you want to do anything like linear regression classification or any of this stuff that the
+
+151
+0:08:36.680 --> 0:08:39.720
+sci-kit learn library will be extremely helpful.
+
+152
+0:08:39.720 --> 0:08:44.040
+In addition to that, there are a few other libraries for example, networks and
+
+153
+0:08:44.120 --> 0:08:45.040
+I graph.
+
+154
+0:08:45.040 --> 0:08:47.320
+Then of course a very important one is tens of love.
+
+155
+0:08:47.320 --> 0:08:53.480
+So if you are interested in doing some deep learning or AI related stuff, then it would be
+
+156
+0:08:53.480 --> 0:08:57.560
+a good idea to learn about tens of love and tens of lies one of the libraries.
+
+157
+0:08:57.560 --> 0:09:00.600
+There is a separate video on tens of love you can look for that.
+
+158
+0:09:00.600 --> 0:09:04.920
+And this is one of the libraries created by Google open source library.
+
+159
+0:09:04.920 --> 0:09:08.760
+So once your familiar with machine learning data analysis machine learning them,
+
+160
+0:09:08.760 --> 0:09:11.560
+that may be the next step to go to deep learning and AI.
+
+161
+0:09:11.560 --> 0:09:13.400
+So that's where tens of love will be used.
+
+162
+0:09:13.400 --> 0:09:18.920
+Then you have beautiful soup which is the primarily used for web scraping and then you take
+
+163
+0:09:18.920 --> 0:09:20.680
+the data and then analyze and so on.
+
+164
+0:09:20.680 --> 0:09:22.920
+Then OS libraries are very common libraries.
+
+165
+0:09:22.920 --> 0:09:25.000
+The name suggests it is for operating system.
+
+166
+0:09:25.000 --> 0:09:30.280
+So if you want to do something on creating directories or folders and things like that,
+
+167
+0:09:30.280 --> 0:09:32.440
+that's when you would use OS.
+
+168
+0:09:32.440 --> 0:09:32.920
+All right.
+
+169
+0:09:32.920 --> 0:09:34.200
+So moving on.
+
+170
+0:09:34.200 --> 0:09:37.800
+Let's talk in a little bit more detail about each of these libraries.
+
+171
+0:09:37.800 --> 0:09:43.880
+So sci-fi as the name suggests is a scientific library and it very specifically,
+
+172
+0:09:43.880 --> 0:09:49.800
+it has some special functions of our integration and for ordinary differential equation.
+
+173
+0:09:49.800 --> 0:09:54.520
+So as you can see these are mathematical operations or mathematical functions.
+
+174
+0:09:54.520 --> 0:10:01.400
+So these are already available in this library and it has linear algebra modules and it is built
+
+175
+0:10:01.400 --> 0:10:02.600
+on top of NumPy.
+
+176
+0:10:02.600 --> 0:10:04.680
+So you'll see what is there in NumPy.
+
+177
+0:10:04.680 --> 0:10:09.000
+So this is again as the name suggests that Num comes from Numbers.
+
+178
+0:10:09.000 --> 0:10:14.120
+So it is a mathematical library and one of its key features is availability of an
+
+179
+0:10:14.120 --> 0:10:15.880
+and dimensional array of checked.
+
+180
+0:10:15.880 --> 0:10:21.240
+It is a very powerful object and we will see how to use this and then of course you can create
+
+181
+0:10:21.240 --> 0:10:23.080
+other let's objects and so on.
+
+182
+0:10:23.080 --> 0:10:30.920
+And it has tools for integrating with CC++ and also for transcode and then it of course also has
+
+183
+0:10:31.000 --> 0:10:36.120
+linear algebra and Fourier transformation and so on all these scientific capabilities.
+
+184
+0:10:36.120 --> 0:10:36.600
+Okay.
+
+185
+0:10:36.600 --> 0:10:41.960
+What else pandas is another very powerful library primarily for data manipulation.
+
+186
+0:10:41.960 --> 0:10:47.320
+So if you're importing any files you will want to create it like a table.
+
+187
+0:10:47.320 --> 0:10:49.960
+So you will create what is known as data frames.
+
+188
+0:10:49.960 --> 0:10:53.960
+These are very powerful data structures that are used in Python programming.
+
+189
+0:10:53.960 --> 0:11:00.440
+So pandas library provides this capability and once you import a data import the data into data
+
+190
+0:11:00.600 --> 0:11:04.360
+frame you can pretty much do whatever you're doing like in a regular database.
+
+191
+0:11:04.360 --> 0:11:10.600
+So people who are coming from a database background or SQL background would really like this
+
+192
+0:11:10.600 --> 0:11:15.880
+because it is very difficult field very much at home because it feels like you're using your
+
+193
+0:11:15.880 --> 0:11:21.480
+viewing a table or using a table and you can do a lot of stuff using the pandas library.
+
+194
+0:11:21.480 --> 0:11:28.360
+Now there are two important terms or components in pandas series and a data frame.
+
+195
+0:11:28.440 --> 0:11:30.280
+I was just talking about the data frame.
+
+196
+0:11:30.280 --> 0:11:34.600
+So let's take a look at what are series and what is a data frame.
+
+197
+0:11:34.600 --> 0:11:37.240
+So within pandas we have series and data frames.
+
+198
+0:11:37.240 --> 0:11:42.520
+So series is primarily some of you may also be knowing this as let's say an array.
+
+199
+0:11:42.520 --> 0:11:45.160
+So it's a one-dimensional structure.
+
+200
+0:11:45.160 --> 0:11:46.440
+Data structure if you will.
+
+201
+0:11:46.440 --> 0:11:51.800
+So in some other languages you may call it as an array or maybe some of the probably any
+
+202
+0:11:51.800 --> 0:11:53.000
+cool and awful list.
+
+203
+0:11:53.000 --> 0:11:56.440
+I mean, are perhaps I'm not very sure on that aspect but yes.
+
+204
+0:11:56.520 --> 0:12:00.520
+So this is like a one-dimensional storage of information.
+
+205
+0:12:00.520 --> 0:12:01.800
+So that is what a series.
+
+206
+0:12:01.800 --> 0:12:04.200
+Whereas data frame is like a table.
+
+207
+0:12:04.200 --> 0:12:06.520
+So you have a two-dimensional structure.
+
+208
+0:12:06.520 --> 0:12:10.200
+You have rows and you have columns and this is very people.
+
+209
+0:12:10.200 --> 0:12:12.840
+As I said, we're familiar with SQL and databases.
+
+210
+0:12:12.840 --> 0:12:15.240
+We'll be able to relate to this very quickly.
+
+211
+0:12:15.240 --> 0:12:20.040
+So you have like a table, you have rows and columns and then you can manipulate the data.
+
+212
+0:12:20.040 --> 0:12:24.520
+So if you want to create a series, this is how you would create a code snippet.
+
+213
+0:12:24.600 --> 0:12:28.040
+And as you can see, the programming in Python is very simple.
+
+214
+0:12:28.040 --> 0:12:29.960
+There are no major overheads.
+
+215
+0:12:29.960 --> 0:12:33.640
+You just need to import some libraries, whichever essential.
+
+216
+0:12:33.640 --> 0:12:35.240
+And then start creating objects.
+
+217
+0:12:35.240 --> 0:12:39.640
+So you don't have to do additional declaration of variables and things like that.
+
+218
+0:12:39.640 --> 0:12:44.200
+So that is a think one key difference between Python and other programming languages.
+
+219
+0:12:44.200 --> 0:12:46.520
+And what does this series contain?
+
+220
+0:12:46.520 --> 0:12:53.000
+It has to contain these numbers, 6346 and X is my object consisting of the series.
+
+221
+0:12:53.000 --> 0:12:57.160
+So if you display, if you just say X, it will display the contents of X.
+
+222
+0:12:57.160 --> 0:13:00.360
+And you will see here that it creates a default index.
+
+223
+0:13:00.360 --> 0:13:01.560
+Then you have data frames.
+
+224
+0:13:01.560 --> 0:13:06.360
+So if you want to create a data frame, as you can see, the series is like a one-dimensional structure.
+
+225
+0:13:06.360 --> 0:13:09.240
+There is just like a row, one row of items.
+
+226
+0:13:09.240 --> 0:13:11.800
+Whereas a data frame looks somewhat like this.
+
+227
+0:13:11.800 --> 0:13:13.480
+It is a two-dimensional structure.
+
+228
+0:13:13.480 --> 0:13:18.280
+So you have columns and one dimension and then you have rows in the other dimension.
+
+229
+0:13:18.360 --> 0:13:19.560
+How do you create a data frame?
+
+230
+0:13:19.560 --> 0:13:23.240
+You need to create a unique rather import pandas.
+
+231
+0:13:23.240 --> 0:13:25.080
+And then you import.
+
+232
+0:13:25.080 --> 0:13:28.360
+In this case, we are basically creating our own data.
+
+233
+0:13:28.360 --> 0:13:32.360
+So that's the reason we are importing NumPy, which is one of the libraries.
+
+234
+0:13:32.360 --> 0:13:34.680
+We just refer to a little bit before.
+
+235
+0:13:34.680 --> 0:13:39.720
+So we are using one of the functionalities within NumPy to create some random numbers.
+
+236
+0:13:39.720 --> 0:13:41.480
+So otherwise this is not really mandatory.
+
+237
+0:13:41.480 --> 0:13:44.680
+You probably will be importing the data from outside.
+
+238
+0:13:44.680 --> 0:13:48.360
+Maybe some CSV file and import into the data frames.
+
+239
+0:13:48.360 --> 0:13:49.320
+So that's what we are doing here.
+
+240
+0:13:49.320 --> 0:13:51.560
+So in this case, we are creating our own test data.
+
+241
+0:13:51.560 --> 0:13:54.280
+That's the reason we are importing NumPy as NP.
+
+242
+0:13:54.280 --> 0:13:57.880
+And then I create a data frame saying PD.datafram.
+
+243
+0:13:57.880 --> 0:13:59.320
+So this is the keyword here.
+
+244
+0:13:59.320 --> 0:14:03.320
+Similarly here in this case, while creating series, we set PD.series.
+
+245
+0:14:03.320 --> 0:14:04.600
+And then you pass the value.
+
+246
+0:14:04.600 --> 0:14:06.840
+Similarly here, using PD.datafram.
+
+247
+0:14:06.840 --> 0:14:11.720
+Now in order to create the data frame, it needs the values in each of these cells.
+
+248
+0:14:11.720 --> 0:14:13.160
+What are the values in the rows?
+
+249
+0:14:13.160 --> 0:14:14.920
+And what are the values in the columns?
+
+250
+0:14:14.920 --> 0:14:19.480
+So that in our example, we are providing using this random number generator.
+
+251
+0:14:19.480 --> 0:14:24.680
+So NP.datandam is like a class or a method that is available in NumPy.
+
+252
+0:14:24.680 --> 0:14:31.000
+And then you're saying, it generates some random numbers in the form of a 4 by 3 matrix
+
+253
+0:14:31.000 --> 0:14:32.600
+or 4 by 3 data frame.
+
+254
+0:14:32.600 --> 0:14:35.240
+The 4 here indicates the number of rows.
+
+255
+0:14:35.240 --> 0:14:38.040
+And the 3 here indicates the number of columns.
+
+256
+0:14:38.040 --> 0:14:41.640
+So these are the columns 0, 1, 2 are the columns.
+
+257
+0:14:41.640 --> 0:14:42.760
+And these are the rows.
+
+258
+0:14:42.760 --> 0:14:46.920
+Here 0, this is 1, this is 2, this is 3.
+
+259
+0:14:46.920 --> 0:14:50.120
+And once again, it will when you display a DF,
+
+260
+0:14:50.120 --> 0:14:52.520
+it will give us a default index.
+
+261
+0:14:52.520 --> 0:14:56.600
+There are ways to omit that, but at this point, we will just keep it simple.
+
+262
+0:14:56.600 --> 0:15:01.320
+So it will display the default index and then the actual values in each of these rows.
+
+263
+0:15:01.320 --> 0:15:02.120
+And column.
+
+264
+0:15:02.120 --> 0:15:04.520
+So this is the way you create a data frame.
+
+265
+0:15:04.520 --> 0:15:09.960
+So now that we have learned some of the basics of pandas, let's take a quick look at how we
+
+266
+0:15:09.960 --> 0:15:11.400
+use this in real life.
+
+267
+0:15:11.400 --> 0:15:15.720
+So let's assume we have a situation where we have some customer data.
+
+268
+0:15:15.720 --> 0:15:21.080
+And we want to kind of predict whether a customer's loan will be approved or not.
+
+269
+0:15:21.080 --> 0:15:25.160
+So we have some historical data about the loans and about the customers.
+
+270
+0:15:25.160 --> 0:15:29.320
+And using that, we will try to come up with a way to maybe predict whether
+
+271
+0:15:29.320 --> 0:15:31.080
+loan will be approved or not.
+
+272
+0:15:31.080 --> 0:15:32.520
+So let's see how we can do that.
+
+273
+0:15:32.520 --> 0:15:35.720
+So this is a part of exploratory analysis.
+
+274
+0:15:35.720 --> 0:15:38.280
+So we will first start with exploratory analysis.
+
+275
+0:15:38.280 --> 0:15:40.840
+We will try to see how the data is looking.
+
+276
+0:15:40.840 --> 0:15:42.040
+So what kind of data?
+
+277
+0:15:42.040 --> 0:15:47.400
+So we will of course I'll take you into the Jupiter notebook and give you a quick live demo.
+
+278
+0:15:47.400 --> 0:15:53.080
+But before that, let's quickly walk through some of the pieces of this program in slides.
+
+279
+0:15:53.080 --> 0:15:57.400
+And then I will take you actually into the actual code and do a demo of that.
+
+280
+0:15:57.400 --> 0:16:00.680
+So the Python program structure looks somewhat like this.
+
+281
+0:16:00.680 --> 0:16:05.320
+The first step is to import your all the required libraries.
+
+282
+0:16:05.320 --> 0:16:11.320
+Now of course it is not necessary that you have to import all your libraries right at the top of the
+
+283
+0:16:11.320 --> 0:16:13.240
+code. But it is a good practice.
+
+284
+0:16:13.240 --> 0:16:18.200
+So if you know you are going to need a certain set of libraries.
+
+285
+0:16:18.200 --> 0:16:21.320
+It may be a good idea to put from a readability perspective.
+
+286
+0:16:21.320 --> 0:16:26.120
+It's a good practice to put all the libraries that you're importing at the beginning of your code.
+
+287
+0:16:26.120 --> 0:16:28.600
+However, it is not mandatory.
+
+288
+0:16:28.600 --> 0:16:32.840
+So in the middle of the code somewhere if you feel that you need a particular library,
+
+289
+0:16:32.840 --> 0:16:36.360
+you can import that library and then start using it in the middle of the code.
+
+290
+0:16:36.360 --> 0:16:38.040
+So that's also perfectly fine.
+
+291
+0:16:38.040 --> 0:16:39.160
+It will not give any error.
+
+292
+0:16:39.160 --> 0:16:39.800
+So anything?
+
+293
+0:16:39.800 --> 0:16:42.680
+However, as I said, it's not such a good practice.
+
+294
+0:16:42.680 --> 0:16:44.920
+So we will import all the required libraries.
+
+295
+0:16:44.920 --> 0:16:48.840
+In this case, we are importing pandas, numpy and matplotlib.
+
+296
+0:16:48.840 --> 0:16:52.840
+And in addition, if we include this piece of code,
+
+297
+0:16:52.840 --> 0:16:59.160
+percentage matplotlib in line, what will happen is all the graphs that we are going to create.
+
+298
+0:16:59.240 --> 0:17:04.360
+The visualizations that we are going to create will be displayed within the notebook.
+
+299
+0:17:04.360 --> 0:17:08.840
+So if you want to have that kind of a provision, you need to have this line.
+
+300
+0:17:08.840 --> 0:17:11.080
+So it's always a good idea when you're starting off.
+
+301
+0:17:11.080 --> 0:17:16.600
+I think it's a good idea to just include this line so that your graphs are shown in line.
+
+302
+0:17:16.600 --> 0:17:18.120
+Okay. So these are the four.
+
+303
+0:17:18.120 --> 0:17:20.120
+We will start with these four lines of code.
+
+304
+0:17:20.120 --> 0:17:22.280
+Then the next step is to import your data.
+
+305
+0:17:22.280 --> 0:17:28.840
+So in our case, there is a training data for loans by the name loan, p underscore train.csv.
+
+306
+0:17:28.840 --> 0:17:31.080
+And we are reading this data.
+
+307
+0:17:31.080 --> 0:17:37.160
+So in this case, you see, unlike the previous example, where we created a data frame with some
+
+308
+0:17:37.160 --> 0:17:43.080
+data that we created ourselves, here we are actually creating a data frame using some external
+
+309
+0:17:43.080 --> 0:17:47.320
+data. And it's the method is very, very straightforward.
+
+310
+0:17:47.320 --> 0:17:51.160
+So you use the read underscore CSV method.
+
+311
+0:17:51.160 --> 0:17:53.640
+And it is a very intuitive function name.
+
+312
+0:17:53.720 --> 0:17:59.160
+And you say, pd dot read underscore CSV and give the path of the file CSV file.
+
+313
+0:17:59.160 --> 0:18:03.240
+That's about it. And then that is ready to the data frame df.
+
+314
+0:18:03.240 --> 0:18:06.920
+This can be any name. We are calling it df. You can call xyz.
+
+315
+0:18:06.920 --> 0:18:09.320
+Anything. This is a name. Just name of the object.
+
+316
+0:18:09.320 --> 0:18:12.920
+So head is one of the methods within the data frame.
+
+317
+0:18:12.920 --> 0:18:15.640
+And it will give us the first five.
+
+318
+0:18:15.640 --> 0:18:19.320
+So this is just to take a quick look. Now you have imported the data.
+
+319
+0:18:19.320 --> 0:18:22.360
+You want to initially have a quick look. How your data is looking.
+
+320
+0:18:22.360 --> 0:18:25.240
+What are the values in some of the columns and so on and so forth?
+
+321
+0:18:25.240 --> 0:18:32.520
+So typically you would do a head df dot head to get the sample of let's say the first few lines
+
+322
+0:18:32.520 --> 0:18:36.440
+of your data. So that's what has happened here. So it displays the first few lines.
+
+323
+0:18:36.440 --> 0:18:41.800
+And then you can see what are the columns within that and what are the values in each of these
+
+324
+0:18:41.800 --> 0:18:46.840
+cells and so on and so forth. You can also typically you would like to see there are any null values.
+
+325
+0:18:46.840 --> 0:18:53.240
+Sorry, are there any is the data for whatever reason is invalid or looking dirty for whatever
+
+326
+0:18:53.240 --> 0:18:59.400
+reason some unnecessary character. So this will give a quick view of that. So in this case,
+
+327
+0:18:59.400 --> 0:19:04.760
+pretty much everything looks okay. Then the next step is to understand the data a little bit
+
+328
+0:19:04.760 --> 0:19:11.960
+overall for each of the columns. What is the information? So the describe function will basically
+
+329
+0:19:11.960 --> 0:19:18.280
+give us a summary of the data. What else can we do? Pandas also allows us to visualize the data
+
+330
+0:19:18.280 --> 0:19:23.880
+and this is more like a part of what we call it as univariate analysis. That means each and every
+
+331
+0:19:23.880 --> 0:19:30.760
+column you can take and do some plots and visualization to understand data in each of the columns.
+
+332
+0:19:30.760 --> 0:19:36.680
+So for example, here the loan amount column we can take and then the hist basically hist method
+
+333
+0:19:36.680 --> 0:19:42.120
+will create a histogram. So you take all the values from one column which is low amount and you
+
+334
+0:19:42.120 --> 0:19:48.120
+create a histogram to see how the data is distributed. So that's what is happening here and as you
+
+335
+0:19:48.120 --> 0:19:53.720
+can see there are some extreme values. So this is again to identify do we have to do some data
+
+336
+0:19:53.720 --> 0:19:59.800
+preparation because if the data is in a completely haphazard way the analysis may be difficult.
+
+337
+0:19:59.800 --> 0:20:05.400
+So with these are the initial or exploratory data analysis, this is primarily done to understand
+
+338
+0:20:05.400 --> 0:20:09.960
+that and see if we need to do some data preparation before we get into the other steps like
+
+339
+0:20:09.960 --> 0:20:15.480
+machine learning and statistical modeling and so on. So in this case we will see that here by plotting
+
+340
+0:20:15.480 --> 0:20:20.200
+this histogram we see that there are some extreme values. So there are some values. A lot of it is
+
+341
+0:20:20.200 --> 0:20:25.960
+around 100 range but there is also something or one or two observations in the 700 range. So it's
+
+342
+0:20:25.960 --> 0:20:30.760
+pretty scattered in that sense or there are not really scattered. Distributed at least scattered
+
+343
+0:20:30.840 --> 0:20:36.200
+but it is randomly scattered. So the range is really huge. So what can we do about it? So there
+
+344
+0:20:36.200 --> 0:20:40.920
+are some steps that we need to do normalization and so on. So we'll see that in a bit. So this is
+
+345
+0:20:40.920 --> 0:20:45.720
+for one of the columns. Let's take another column which is applicant income. Similar kind of similar
+
+346
+0:20:45.720 --> 0:20:51.960
+situation you have most of your observations in this range but there are also some which are far off
+
+347
+0:20:51.960 --> 0:20:57.320
+from very most of the observations are. So this is also pretty this also has some extreme values.
+
+348
+0:20:57.320 --> 0:21:03.400
+So we love to see what can be done. Credit history is the binary value. So some people have a zero
+
+349
+0:21:03.400 --> 0:21:09.160
+value and some will have credit history of one. This is just like a flag. So this basically is telling
+
+350
+0:21:09.160 --> 0:21:14.600
+us how many people have a one and how many people have zero. So it looks like majority of them
+
+351
+0:21:14.600 --> 0:21:20.600
+have a value of one and a few about 100 of them have a value of zero. Okay. What else can we do?
+
+352
+0:21:20.600 --> 0:21:25.720
+So we now understood a little bit about the data. So we need to do some data rangling or data
+
+353
+0:21:25.720 --> 0:21:33.480
+munging and see if we can some bring in some kind of normalization of all this data. And
+
+354
+0:21:33.480 --> 0:21:40.280
+we will kind of try to understand what is data rangling and before we actually go into it. Okay.
+
+355
+0:21:40.280 --> 0:21:45.080
+So data rangling is nothing but a process of cleaning the data. If let's say there are
+
+356
+0:21:45.080 --> 0:21:49.880
+there are multiple things that can happen. In this particular example there were no missing values.
+
+357
+0:21:49.960 --> 0:21:56.520
+But typically when you get some data very often it will so happen that a lot of values are missing.
+
+358
+0:21:56.520 --> 0:22:03.240
+Either they are null values or there are a lot of zeros. Now you cannot use such data as it is
+
+359
+0:22:03.240 --> 0:22:08.440
+to perform some let's say predictive analysis or perform some machine learning activities and so on.
+
+360
+0:22:08.440 --> 0:22:13.320
+So that is one part of it. So you need to clean the data. The other is unifying the data. Now
+
+361
+0:22:13.320 --> 0:22:19.960
+these ranges of this data are very huge. Some of them are going from some columns are going from
+
+362
+0:22:19.960 --> 0:22:26.280
+zero to over a thousand and some columns are just between 10 to 20 and so on. These will affect
+
+363
+0:22:26.280 --> 0:22:33.160
+the accuracy of the analysis. So we need to do some kind of unifying the data and so on. So that
+
+364
+0:22:33.160 --> 0:22:40.040
+is what rangling data rangling is all about. So before we actually perform any analysis we need to
+
+365
+0:22:40.040 --> 0:22:45.560
+bring the data so to some kind of a shape so that we can perform additional analysis. Actually
+
+366
+0:22:45.560 --> 0:22:51.000
+analysis on this and get some insights. Now how do we deal with missing values? There's a very
+
+367
+0:22:51.000 --> 0:22:56.200
+common issue when we take data or when we get data from the business. When a data scientist gets
+
+368
+0:22:56.200 --> 0:23:01.560
+a data from the business. So we should never assume that all our data will be clean and all the
+
+369
+0:23:01.560 --> 0:23:07.960
+values filled up and so on because in real life very often there will be the data will be dirty.
+
+370
+0:23:07.960 --> 0:23:13.320
+So data rangling is the process where you kind of clean up the data. First of all identify whether
+
+371
+0:23:13.320 --> 0:23:20.600
+the data is dirty and then clean up. So how do we find some data is missing? So there are a few ways
+
+372
+0:23:20.600 --> 0:23:27.000
+you can write a small piece of code which will identify a for a given column or for given
+
+373
+0:23:27.000 --> 0:23:34.360
+row any of the observations are null primarily. So this line of code for example is doing that.
+
+374
+0:23:34.360 --> 0:23:40.840
+It is trying to identify how many null values or missing values are there for each of the columns.
+
+375
+0:23:40.840 --> 0:23:46.600
+So this is a lambda function and what we are saying is find out a for value is null and then
+
+376
+0:23:46.600 --> 0:23:52.200
+you add all of them. How many observations are there where it is particular column is null.
+
+377
+0:23:52.200 --> 0:23:57.400
+So it does that for all the column. So here you will see that for low 90 obviously it's an id.
+
+378
+0:23:57.400 --> 0:24:02.840
+So there are no null values or missing values. Gender has about 13 observations where the value
+
+379
+0:24:02.920 --> 0:24:07.400
+is missing. Similarly, marital status has three and so on and so forth. So we will see here for
+
+380
+0:24:07.400 --> 0:24:13.160
+example of low n amount has 21 observations where the value is missing, low n amount term has
+
+381
+0:24:13.160 --> 0:24:18.760
+14 observations and so on. So we will see how to handle this missing values. So there are multiple
+
+382
+0:24:18.760 --> 0:24:25.720
+ways in which you can handle missing values. If the number of observations are very small compared
+
+383
+0:24:25.720 --> 0:24:32.120
+to the total number of observations then sometimes one of the easy ways is to completely remove
+
+384
+0:24:32.200 --> 0:24:37.640
+that data. So or delete that record exclude that record. So that is one way of doing it.
+
+385
+0:24:37.640 --> 0:24:43.000
+So if there are let's say a million records and maybe 10 records are having missing values.
+
+386
+0:24:43.000 --> 0:24:48.360
+It may not be worth doing something to fill up those values. It may be better off to get
+
+387
+0:24:48.360 --> 0:24:54.120
+rid of those observations. So that is the missing values are proportionately very small.
+
+388
+0:24:54.120 --> 0:25:00.120
+But if there are relatively large number of missing values, if you exclude those observations then
+
+389
+0:25:00.200 --> 0:25:07.400
+your accuracy may not be that very good. So there are the other way of doing it as we can take
+
+390
+0:25:07.400 --> 0:25:14.200
+a mean value of a particular column and fill up wherever there are missing values. Fill up those
+
+391
+0:25:14.200 --> 0:25:20.200
+observations or cells with the mean value. So that way what happens is you don't give some value
+
+392
+0:25:20.200 --> 0:25:26.920
+which is too high or too low and it somehow fits within the range of observations that we are seeing.
+
+393
+0:25:26.920 --> 0:25:32.040
+So this is one technique. Again, there are it can be case to case and you may have to take a
+
+394
+0:25:32.040 --> 0:25:38.120
+call based on your specific situation. But these are some of the common method. If you see in the
+
+395
+0:25:38.120 --> 0:25:44.040
+previous case, low and amount had 21 and now we went ahead and filled all of those with the mean value.
+
+396
+0:25:44.040 --> 0:25:49.960
+So now there are zero with missing values. So this is one part of a data wrangling activity.
+
+397
+0:25:49.960 --> 0:25:54.440
+What else you can do? You can also check what are the types of the data. So DF dot
+
+398
+0:25:54.520 --> 0:25:59.960
+the types will give us what are the various data types. So all right. So you can also perform some
+
+399
+0:25:59.960 --> 0:26:06.280
+basic mathematical observations. We have already seen that mean reform now. So similarly, if you do
+
+400
+0:26:06.280 --> 0:26:12.600
+call the mean method for the data frame object, it will actually perform or display or calculate
+
+401
+0:26:12.600 --> 0:26:17.560
+the mean for pretty much all the numerical columns that are available in this. Right. So for example,
+
+402
+0:26:17.560 --> 0:26:22.920
+here we can come co-ocult, content and come and all these are numerical values. So it will display
+
+403
+0:26:23.000 --> 0:26:27.960
+the mean values of all of those. Now another thing that you can do is you can actually also
+
+404
+0:26:27.960 --> 0:26:34.200
+combine data frame. So let's say you import data from one CSV file into one data frame and
+
+405
+0:26:34.200 --> 0:26:39.400
+another CSV file into another data frame and then you want to merge these because you want to do
+
+406
+0:26:39.400 --> 0:26:45.720
+an analysis on entire data. One example could be that you have data in the form of CSV files,
+
+407
+0:26:45.720 --> 0:26:51.560
+one CSV file for each month of the year. Generally, February, March, each of these are in a different.
+
+408
+0:26:51.560 --> 0:26:58.520
+So you can import them into let's say 12 data frames and then you can merge them together as a single
+
+409
+0:26:58.520 --> 0:27:04.520
+data frame and then you perform your analysis on the entire data frame or the entire data for the
+
+410
+0:27:04.520 --> 0:27:09.080
+year. So that is one example. So how do we do that? This is our video. Again, in this case, we are not
+
+411
+0:27:09.080 --> 0:27:14.440
+importing any data. We are just creating some random values or using some random values. So let's
+
+412
+0:27:14.440 --> 0:27:21.480
+assume I have a data frame which is by the name 1 and I assign some random values here.
+
+413
+0:27:21.480 --> 0:27:28.600
+Which is a 5 by 4 format. So there are 5 rows and 4 columns and this is our my data frame 1 looks.
+
+414
+0:27:28.600 --> 0:27:34.760
+And then I create another data frame which is data frame 2 again random numbers of the format 5 by 4
+
+415
+0:27:34.760 --> 0:27:39.880
+and I have something like this. Now I want to combine these two. How do I combine these two?
+
+416
+0:27:39.880 --> 0:27:46.920
+I can use the concatenate or concatenate method and I can combine these two. So pd.concate
+
+417
+0:27:46.920 --> 0:27:53.160
+and it takes the the data frames 1 and 2. If you have more of them, you can provide them and it will just
+
+418
+0:27:53.160 --> 0:27:59.240
+simply add all of them merge all of them. For concatenate, whatever you call whichever term you call,
+
+419
+0:27:59.240 --> 0:28:04.280
+it will. So of course, we have to make sure that the structure remains the same. Like I said,
+
+420
+0:28:04.280 --> 0:28:09.880
+this could be let's say sales data coming for 12 different months. But each of the files has the same
+
+421
+0:28:09.880 --> 0:28:15.000
+structure. So now you can combine all of them. More Jol of them are using the concatenate method.
+
+422
+0:28:15.080 --> 0:28:21.800
+If we have let's say structure is not identical, then what will happen? Let's say we have these two
+
+423
+0:28:21.800 --> 0:28:29.160
+data frames. One has a column by the name key and the second column is L.Veal and a second data
+
+424
+0:28:29.160 --> 0:28:36.280
+frame which has a column by the name key. But the second column by the name are well not L.Veal.
+
+425
+0:28:36.280 --> 0:28:43.080
+So you see here the structure is not identical. So you can still combine them. But then the way they
+
+426
+0:28:43.160 --> 0:28:49.400
+get combined or merged is somewhat like this. So it takes the key as a common parameter between them.
+
+427
+0:28:49.400 --> 0:28:55.000
+Some common column has to be there otherwise this will not work. And then we have to use merge
+
+428
+0:28:55.000 --> 0:29:00.840
+instead of concatenate. And when we do a merge, then we get the result will be in this format.
+
+429
+0:29:00.840 --> 0:29:06.840
+What it does is it uses the key as a common thread between them. And then it kind of populates the
+
+430
+0:29:06.840 --> 0:29:13.560
+values accordingly. So if you see here the first one had four and bar for key and then it had
+
+431
+0:29:13.560 --> 0:29:20.280
+L values of one and two. So if we go back four and bar had one and two L value. So that's what we see
+
+432
+0:29:20.280 --> 0:29:28.440
+here one and two. Whereas in the right data frame we had four bar and bar is a second time and then
+
+433
+0:29:28.440 --> 0:29:34.440
+R values are three four and five. So what it has done for four it has put for the existing right
+
+434
+0:29:34.600 --> 0:29:41.160
+four is already existing because it has come from left. So it will just put the value of R value here.
+
+435
+0:29:41.160 --> 0:29:46.840
+Which is three. Similarly it will put four here because for bar if you go back for bar it is
+
+436
+0:29:46.840 --> 0:29:54.600
+the value is four. And since it has one more value of bar it will go and add this five as well.
+
+437
+0:29:54.600 --> 0:30:01.000
+The only thing here is that this one had for example left had only two values and only one value
+
+438
+0:30:01.000 --> 0:30:07.080
+for bar but since we are depending on merging and there are two key values with the bar.
+
+439
+0:30:07.080 --> 0:30:13.640
+Therefore it will kind of repeat the value of L value here. So that's what we are seeing in this case.
+
+440
+0:30:13.640 --> 0:30:20.280
+So L value appears twice the number two appears twice but that is because R value there are two of them.
+
+441
+0:30:20.280 --> 0:30:26.360
+All right. So that is how when you don't have identical structure that's of you merge.
+
+442
+0:30:26.360 --> 0:30:33.400
+Now we will talk a little bit about cyclotler. So cyclotler is a library which is used for doing
+
+443
+0:30:33.400 --> 0:30:38.920
+machine learning of for performing machine learning activities. So if you want to do linear regression
+
+444
+0:30:38.920 --> 0:30:45.960
+logistic regression and so on there are easily usable APIs that you can call and that's
+
+445
+0:30:46.920 --> 0:30:52.120
+the advantage of cyclotler. And it provides a bunch of algorithms. So I think that is the
+
+446
+0:30:52.120 --> 0:30:58.440
+put part about this library. So if you want to use cyclotler obviously you need to import these
+
+447
+0:30:58.440 --> 0:31:04.280
+modules and also there are some sub modules you may have to import based on what you're trying to
+
+448
+0:31:04.280 --> 0:31:09.880
+use. For example if we know if we want to use logistic regression. Again people who are probably
+
+449
+0:31:09.880 --> 0:31:14.040
+not very familiar with machine learning there is a separate module for machine learning you may
+
+450
+0:31:14.040 --> 0:31:19.480
+want to take a look at that but we will just touch upon the basics here. So machine learning has
+
+451
+0:31:19.960 --> 0:31:25.560
+algorithms like linear regression logistic regression and random forest classification and so on.
+
+452
+0:31:25.560 --> 0:31:31.080
+So that is what we are talking about here. So those algorithms are available and when if you want to
+
+453
+0:31:31.080 --> 0:31:38.120
+use some of them you need to import them and from the cyclotler library. So cyclotler is the top
+
+454
+0:31:38.120 --> 0:31:43.800
+level library which is basically a still learn right and then it has kind of sub parts in it.
+
+455
+0:31:43.800 --> 0:31:48.760
+You need to import those based on what exactly you will be or which algorithm you will be using.
+
+456
+0:31:48.840 --> 0:31:54.280
+So let's take an example as we move and we will see that whenever we perform some machine learning
+
+457
+0:31:54.280 --> 0:32:00.280
+activity those of you who are familiar with machine learning will already know this we split our
+
+458
+0:32:00.280 --> 0:32:06.920
+labeled data into two parts training and test. Now there are multiple ways of splitting this data
+
+459
+0:32:06.920 --> 0:32:14.120
+how do we either some people do it like 5050 some people do it 8020 which is training is 80 and
+
+460
+0:32:14.920 --> 0:32:19.720
+20 and so on. So it is individual preference. There are no hard and fast rules.
+
+461
+0:32:19.720 --> 0:32:24.600
+By and large we have seen that training data set is larger than the test data set and again
+
+462
+0:32:24.600 --> 0:32:29.800
+we will probably not go into details of why do we do this at this point but that's one of the steps
+
+463
+0:32:29.800 --> 0:32:37.400
+in machine learning. So cyclotler offers a readily available method to do this which is train test
+
+464
+0:32:37.480 --> 0:32:43.080
+split. So in this example let's say we are taking the values x and y are our values.
+
+465
+0:32:43.080 --> 0:32:50.280
+x is the independent variables and y is our dependent variable and we are using these two and then
+
+466
+0:32:50.280 --> 0:32:56.600
+I want to split this into train and test data. So what do we do? We import the train test split
+
+467
+0:32:56.600 --> 0:33:02.040
+sub module from within psychic learn which is a scalar right. So within that we import train test
+
+468
+0:33:02.040 --> 0:33:08.600
+split and then you call the strain test split method or function or whatever you call that
+
+469
+0:33:08.600 --> 0:33:15.560
+and pass the data. So x is the all the values of the independent variables and y is our labels.
+
+470
+0:33:15.560 --> 0:33:23.000
+So you pass x and y and then you specify what should be your size of the test data. So only one
+
+471
+0:33:23.000 --> 0:33:30.040
+you need to specify. So if you say test size is 0.25 it is understood that train size will be 0.75.
+
+472
+0:33:30.120 --> 0:33:34.040
+So you're telling what should be the ratio of this split. So technically it doesn't
+
+473
+0:33:34.040 --> 0:33:39.640
+nothing prevents you from giving whatever you like here. So you can give test as 80 and train as
+
+474
+0:33:39.640 --> 0:33:45.640
+20. So whichever way but then there's normal practices you will have the training data set would be larger
+
+475
+0:33:45.640 --> 0:33:53.640
+than the test data set and typically it would be 80 to 20 75 25 or 65 35 something like that.
+
+476
+0:33:53.640 --> 0:33:59.480
+So that is the second parameter and this is just to say that you know the data has to be randomly
+
+477
+0:33:59.480 --> 0:34:04.520
+split. So it shouldn't be like you take the first 75% and put it in training and then the next
+
+478
+0:34:04.520 --> 0:34:10.440
+25% and put it in test so that so such a thing shouldn't happen. So we first set the state random
+
+479
+0:34:10.440 --> 0:34:16.200
+state so that the splitting is done in a very random way. So if they randomly picked up the data
+
+480
+0:34:16.200 --> 0:34:22.920
+and then put it into training and test and then this results in these four data frames. So x
+
+481
+0:34:22.920 --> 0:34:30.440
+train and x test and y train and y test. Okay. So that is basically the result it will
+
+482
+0:34:30.440 --> 0:34:36.920
+start. Now that the splitting is done let's see how to implement or execute logistic regression.
+
+483
+0:34:36.920 --> 0:34:42.840
+So in logistic regression what we try to do is try to develop a model which will classify
+
+484
+0:34:42.840 --> 0:34:49.480
+the data. Logistic regression is an algorithm for supervised learning for performing classification.
+
+485
+0:34:49.560 --> 0:34:55.320
+So logistic regression is for classification and usually it is binary classification. So binary
+
+486
+0:34:55.320 --> 0:35:00.920
+classification means there are two classes. So either like a yes no or for example customer will buy
+
+487
+0:35:00.920 --> 0:35:05.800
+or will not buy. So that is a binary classification. So that's where we use logistic regression.
+
+488
+0:35:05.800 --> 0:35:10.360
+So let's take a look at the code how to implement something like that using scikit-learn.
+
+489
+0:35:10.360 --> 0:35:16.120
+So the first thing is to import this logistic regression sub-module or sub-class whatever you call it
+
+490
+0:35:16.120 --> 0:35:22.920
+and then create an instance of that. So our object is classifier. So we are creating an object by the name.
+
+491
+0:35:22.920 --> 0:35:27.080
+This is a name by the way you can give any name in our case we are saying classifier.
+
+492
+0:35:27.080 --> 0:35:32.360
+We say classifier is equal to logistic regression. So we are creating an instance of the logistic
+
+493
+0:35:32.360 --> 0:35:39.480
+regression variable or class or whatever. Okay and you can pass a variable or a parameter rather
+
+494
+0:35:39.480 --> 0:35:45.880
+which is the random state is equal to zero. And once you create the object which in our case is
+
+495
+0:35:45.880 --> 0:35:51.800
+named classifier you can then train the object by calling the method fit. So this is important to
+
+496
+0:35:51.800 --> 0:35:57.560
+not we don't call any there is no method like train here but we call what is known as there is a
+
+497
+0:35:57.560 --> 0:36:03.960
+method called fit. So you are basically by calling the fit method you are training this model.
+
+498
+0:36:04.040 --> 0:36:10.360
+And in order to train the model you need to pass the training data set. So x underscore train is
+
+499
+0:36:10.360 --> 0:36:15.800
+your independent variables the set of independent variables and y underscore train is your dependent
+
+500
+0:36:15.800 --> 0:36:22.440
+variable or the label. So you pass both of these and call the fit function of it method which will
+
+501
+0:36:22.440 --> 0:36:29.000
+actually result in the training of this model classifier. Now this is basically showing what are the
+
+502
+0:36:29.000 --> 0:36:35.480
+possible parameters that can be passed or initiated when we are calling the logistic or the
+
+503
+0:36:35.480 --> 0:36:40.120
+instance of logistic regression. So this is what you can also look up the health file if you have
+
+504
+0:36:40.120 --> 0:36:45.720
+installed Python. So some of these are very intuitive but some you may want to take a look at the
+
+505
+0:36:45.720 --> 0:36:51.480
+details of what exactly they do. All right so moving on once we train the model by calling fit
+
+506
+0:36:51.480 --> 0:36:57.560
+then the next step is to test our model. So this is where we will use the test data unit
+
+507
+0:36:57.560 --> 0:37:02.920
+pay attention here. Here I am calling so there are two things. One is in order to test our data we have
+
+508
+0:37:02.920 --> 0:37:09.720
+to actually call what is known as the method known as predict. So here this is where so the training is
+
+509
+0:37:09.720 --> 0:37:14.840
+done now is the time for inference isn't it? So we have the model. Now we want to check whether our
+
+510
+0:37:14.840 --> 0:37:20.440
+model is working correctly or not. So what you do you have your test data remember we split it
+
+511
+0:37:20.440 --> 0:37:26.680
+25% of our data was stored here right we split it into test and training. So that 25% of the data
+
+512
+0:37:26.680 --> 0:37:33.240
+we pass to and call the method predict so that the model will now predict a values for y right so that's
+
+513
+0:37:33.240 --> 0:37:39.800
+why here we are calling it as y and score predict and if we display here as I said this is a logistic
+
+514
+0:37:39.800 --> 0:37:44.600
+regression which is basically binary classification. So it gives us the results like yes or no
+
+515
+0:37:44.600 --> 0:37:51.480
+in this particular case and then you can so this is what the model has predicted or model has classified.
+
+516
+0:37:51.480 --> 0:37:57.800
+Now but we also know we already have the labels for this. So we need to compare with existing labels
+
+517
+0:37:57.800 --> 0:38:03.400
+with the known labels whether this classification is correct or not. So that is where is the next
+
+518
+0:38:03.400 --> 0:38:09.240
+step which is basically calculating the accuracy and so on will come into play. Okay so in this case the
+
+519
+0:38:09.240 --> 0:38:15.000
+first thing most important thing to notice we do the prediction using predict and here we are passing
+
+520
+0:38:15.080 --> 0:38:20.520
+x and is called test and not trained right in this case we did x and y. So again one more point
+
+521
+0:38:20.520 --> 0:38:27.160
+to be noted here in case of training we will pass both the independent variables and also the
+
+522
+0:38:27.160 --> 0:38:32.280
+dependent variables because the system has to internally it has to verify that is what is the
+
+523
+0:38:32.280 --> 0:38:37.080
+training process. So what it will do it will take the x values it will try to come up with the y value
+
+524
+0:38:37.080 --> 0:38:41.800
+and compare with the actual y value right so that is what is the training method so that's why we have
+
+525
+0:38:41.800 --> 0:38:49.240
+to pass both x as well as y whereas in case of predict we don't pass both we only pass because we
+
+526
+0:38:49.240 --> 0:38:54.760
+are pretending as if this is the actual data so in actual data you will not have the labels isn't it?
+
+527
+0:38:54.760 --> 0:39:00.440
+So we are just passing the independent variables and the system will then come up with the y values
+
+528
+0:39:00.440 --> 0:39:06.120
+which we will then remember we also know the actual values so we will compare this with the actual
+
+529
+0:39:06.120 --> 0:39:11.160
+values and we will find out whether how accurate the model is. So how do we do that?
+
+530
+0:39:11.240 --> 0:39:18.440
+We use what is known as a confusion matrix so this is also readily available in the Python library
+
+531
+0:39:18.440 --> 0:39:24.600
+so we import this confusion matrix and some of you who already know machine learning will find
+
+532
+0:39:24.600 --> 0:39:29.640
+this familiar but those who are new to machine learning this confusion matrix is nothing but this
+
+533
+0:39:29.640 --> 0:39:35.080
+matrix this kind of a matrix which basically tells how many of them are correctly predicted
+
+534
+0:39:35.080 --> 0:39:39.720
+and how many of them are incorrectly predicted so the some of the characteristics let's quickly
+
+535
+0:39:39.800 --> 0:39:45.240
+spend some time on this confusion matrix itself this the total numbers out here these are just the
+
+536
+0:39:45.240 --> 0:39:51.400
+numbers these are like number of observations then the accuracy is considered to be highest when the
+
+537
+0:39:51.400 --> 0:39:57.640
+the numbers or the sum of the numbers across the diagonals is maximum okay and the numbers
+
+538
+0:39:57.640 --> 0:40:02.920
+outside of the diagonal should be minimum so which means that if this model was 100% accurate
+
+539
+0:40:02.920 --> 0:40:09.000
+then the sum of these two there would have been only numbers in these two along the diagonal this would
+
+540
+0:40:09.080 --> 0:40:14.920
+have been 0 and this would have been 0 okay so that is like a 100% accurate model that is very rare
+
+541
+0:40:14.920 --> 0:40:20.200
+but just that you are aware so it's just a given idea okay all right so once you have the confusion
+
+542
+0:40:20.200 --> 0:40:25.640
+matrix you then try to calculate the accuracy which is in a percentage so there are two things
+
+543
+0:40:25.640 --> 0:40:30.680
+that we can do from a confusion matrix or that we can calculate from a confusion matrix one is the
+
+544
+0:40:30.680 --> 0:40:36.760
+accuracy and the other is the precision what is the accuracy accuracy is basically a measure of how many
+
+545
+0:40:36.840 --> 0:40:42.440
+of the observations have been correctly predicted okay so let's say this is a little bit more
+
+546
+0:40:42.440 --> 0:40:48.760
+detailed view of the confusion matrix it looks very similar like as we saw in this case right
+
+547
+0:40:48.760 --> 0:40:56.280
+so this is a 2 by 2 matrix that's what we are seeing here 18 27 21 0 3 so 18 27 21 0 3 now but
+
+548
+0:40:56.280 --> 0:41:01.800
+what are these values that is what is the kind of the labels are shown here in this so there are all
+
+549
+0:41:01.800 --> 0:41:10.280
+together 150 observations so as I said the sum of all these four right 18 plus 27 plus 103 plus 2
+
+550
+0:41:10.280 --> 0:41:16.520
+is equal to 150 that's the first thing we have to observe the sum of all these values will be equal
+
+551
+0:41:16.520 --> 0:41:23.000
+to the sum of test observations number of test observations we have 150 test observations because
+
+552
+0:41:23.000 --> 0:41:29.800
+remember we had about 500 we split that into 25 75 so that is why we have 150 here and I think 350
+
+553
+0:41:29.800 --> 0:41:34.680
+in the training data set okay so that we get the numbers correct so that's the first thing now this
+
+554
+0:41:34.680 --> 0:41:42.280
+next thing is let's take a look at the actual values this view is the actual view so there are actually
+
+555
+0:41:42.280 --> 0:41:50.360
+right in the actual data we have labels yes and no so as per the actual data there are 45
+
+556
+0:41:50.360 --> 0:41:58.920
+observations tagged as no and similarly there are 105 observations that are tagged as yes or labeled as
+
+557
+0:41:59.000 --> 0:42:03.720
+yes okay now I know for the first time when you're seeing this it may be a little confusing but just
+
+558
+0:42:03.720 --> 0:42:10.440
+stay with me okay so this is the actual part of it and this side tells us the predicted part of it
+
+559
+0:42:10.440 --> 0:42:17.000
+so our model has predicted and it has totally predicted 20 of them as no right so that is what this
+
+560
+0:42:17.000 --> 0:42:24.200
+is totally 20 of them it has predicted as no and it has predicted 130 of them as yes okay I hope
+
+561
+0:42:24.200 --> 0:42:29.960
+this part is clear so before we go into the middle part let us first understand what exactly are these
+
+562
+0:42:29.960 --> 0:42:37.480
+numbers so actually tagged as no there are 45 total actually tagged as yes there are 105 and predicted
+
+563
+0:42:37.480 --> 0:42:43.640
+no there are 20 predicted as yes there are 130 this is the result from our model okay this is the
+
+564
+0:42:43.640 --> 0:42:48.760
+result from our model and this is the actual value which we already know because this is our label data
+
+565
+0:42:48.760 --> 0:42:53.720
+that is the first thing now now let us take a look at each of these individually okay now what
+
+566
+0:42:53.720 --> 0:43:01.000
+are the options we have on the game okay so now what is happening here let us look at these these values
+
+567
+0:43:01.000 --> 0:43:09.240
+so this 18 says that these are actually tagged as no and the model has also predicted as no which
+
+568
+0:43:09.240 --> 0:43:14.680
+means this is what is known as a true positive right or true negative sorry right which means that
+
+569
+0:43:14.680 --> 0:43:21.720
+our model has predicted is it correctly it is negative because it says no so and it is also predicted
+
+570
+0:43:21.720 --> 0:43:28.040
+no so it is known as what is known as true negative okay now let us come to this side of it that way
+
+571
+0:43:28.040 --> 0:43:33.320
+we are talking about the diagonal remember I said most of the value should be in the diagonal okay
+
+572
+0:43:33.320 --> 0:43:39.400
+so that means these 18 are correctly tagged they are labeled as no and our model has predicted as no
+
+573
+0:43:39.400 --> 0:43:45.560
+so these are correctly tagged and these are known as true negative okay similarly if we come
+
+574
+0:43:45.560 --> 0:43:52.840
+diagonally down there are 103 observations which are labeled as yes actual value is as and our
+
+575
+0:43:52.840 --> 0:43:58.520
+model has also predicted as yes and these are known as true positive values positive because of this
+
+576
+0:43:58.520 --> 0:44:05.400
+yes okay right so what is important is this is true this is also true so we have to make sure that
+
+577
+0:44:05.480 --> 0:44:11.800
+the maximum number of values are in the true section okay true positive and true negative that's the
+
+578
+0:44:11.800 --> 0:44:17.640
+reason I said the sum along the diagonal should be maximum now let's say your our model was 100%
+
+579
+0:44:17.640 --> 0:44:26.520
+accurate this sum in this case it is only 103 plus 103 plus 18 which is 21 but if our model
+
+580
+0:44:26.520 --> 0:44:32.360
+was accurate the sum of these two would have been 150 that means it's a perfect model okay all right
+
+581
+0:44:32.920 --> 0:44:38.920
+what else since we covered these two let's also cover these two so here this says that 27 of them
+
+582
+0:44:38.920 --> 0:44:44.840
+we're actually labeled no but our model has predicted as yes that means this is wrong right
+
+583
+0:44:44.840 --> 0:44:51.400
+similarly these are two of them where the actual value is yes but our model has predicted as no
+
+584
+0:44:51.400 --> 0:44:57.160
+that means it's a wrong prediction so you get the point so therefore along the diagonals are the
+
+585
+0:44:57.160 --> 0:45:04.760
+correct values whereas in other places it is all wrong values or wrong predictions okay now how do we
+
+586
+0:45:04.760 --> 0:45:10.760
+calculate accuracy from this information so the way to calculate accuracy is so we'd say okay there are
+
+587
+0:45:10.760 --> 0:45:16.440
+total observations are 150 and what are the correctly predicted values these are the correctly
+
+588
+0:45:16.440 --> 0:45:23.640
+predicted values which is 18 plus 103 so this will give us our accuracy so 103 plus 18 which is
+
+589
+0:45:23.640 --> 0:45:31.400
+121 divided by our total observations which is 150 is our accuracy which is 0.8 or we can say it is
+
+590
+0:45:31.400 --> 0:45:38.840
+80% okay now there is another concept called precision so precision is given by the formula
+
+591
+0:45:38.840 --> 0:45:45.960
+true positives divided by the predicted positives totally predicted positives okay what do we mean by
+
+592
+0:45:45.960 --> 0:45:51.880
+that which are the true positives here remember which are the true positives we just recall we just
+
+593
+0:45:51.880 --> 0:45:57.880
+talked in the previous slide which are the true positives you see here so this 103 are the true positives
+
+594
+0:45:57.880 --> 0:46:03.000
+which means that the value is positive actual value is positive predicted values also positive so that's
+
+595
+0:46:03.000 --> 0:46:09.800
+what's called a true positive so 103 divided by so that is our true positive 103 divided by
+
+596
+0:46:09.800 --> 0:46:15.960
+totally predicted as yes now what is totally predicted as yes it remember 130 of them I have all
+
+597
+0:46:15.960 --> 0:46:21.000
+together been predicted as yes not that they're correctly predicted only 103 have been correctly
+
+598
+0:46:21.000 --> 0:46:29.000
+predicted but 130 of them have been predicted as yes so precision is basically the ratio of these two
+
+599
+0:46:29.000 --> 0:46:35.640
+out of the totally predicted how many of them are actually true that ratio so 103 by 130 which is
+
+600
+0:46:35.640 --> 0:46:41.960
+again about 80% is the precision that's how you calculate precision so this is just a simple formula
+
+601
+0:46:41.960 --> 0:46:47.480
+in the term that you need to remember so accuracy is you need to take total of true positive and true
+
+602
+0:46:47.480 --> 0:46:53.160
+negative divided by the total number of observations whereas precision is true positives divided
+
+603
+0:46:53.160 --> 0:46:59.560
+by the totally predicted positives okay so that is our accuracy and precision now what we did
+
+604
+0:46:59.560 --> 0:47:05.400
+the accuracy calculation was manual but we can also use some libraries which are already existing
+
+605
+0:47:05.400 --> 0:47:10.920
+and the functions within that library so a circuit learned provides one such method so for example
+
+606
+0:47:11.000 --> 0:47:16.680
+accuracy underscore score is one such method so if you use that and pass your test and predicted
+
+607
+0:47:16.680 --> 0:47:23.240
+values only the why you need to pass right the dependent variable values so if you pass that it will
+
+608
+0:47:23.240 --> 0:47:28.600
+calculate it for you so in this case again as you can see it still calculates the same which is 80
+
+609
+0:47:28.600 --> 0:47:34.600
+percent which we have seen here as well okay so this can be done using the method great so that's
+
+610
+0:47:34.600 --> 0:47:40.840
+pretty much what we have done here before we conclude let me take you into the code and show you
+
+611
+0:47:41.320 --> 0:47:49.880
+how it actually looks okay so this is our code let me run it okay one by one we have already seen
+
+612
+0:47:49.880 --> 0:47:56.040
+most of the steps and slides so I will but I will run this in the actual Jupiter node box some
+
+613
+0:47:56.040 --> 0:48:00.680
+of you if you are not yet familiar with Jupiter node book again there are other videos we created
+
+614
+0:48:00.680 --> 0:48:05.960
+on how to install Jupiter node book and how to set up Jupiter node book and so on in this tutorial
+
+615
+0:48:06.040 --> 0:48:11.560
+also we there was one slide on how to install python and Jupiter node book if you have not yet
+
+616
+0:48:11.560 --> 0:48:18.120
+done please do that so that then you can actually walk through this code while you are watching this okay
+
+617
+0:48:18.120 --> 0:48:24.120
+so what are we doing here we are importing the libraries required libraries we call here we have
+
+618
+0:48:24.120 --> 0:48:31.640
+pandas we have numpy and for visualization we have matplotlib and this line is basically reading
+
+619
+0:48:31.720 --> 0:48:38.840
+the CSV file so we have the CSV file locally on our local right and this is where I am checking
+
+620
+0:48:38.840 --> 0:48:44.520
+the data just so I am starting with max directory analysis how the data is looking so it looks good
+
+621
+0:48:44.520 --> 0:48:50.120
+I don't know major missing values or anything like that so it will display all the columns and
+
+622
+0:48:50.120 --> 0:48:57.000
+it will show me the first five rows if when I am using this head function and then I want to see
+
+623
+0:48:57.320 --> 0:49:02.680
+kind of a summary of all the each of the numerical columns so that's what I am doing here these are
+
+624
+0:49:02.680 --> 0:49:08.840
+the numerical columns and it gives a summary like how many observations are there what is the mean
+
+625
+0:49:08.840 --> 0:49:14.360
+standard deviation minimum maximum and so on and so forth for each of them and then you can
+
+626
+0:49:14.360 --> 0:49:21.720
+do some visualization so this is the visualization for this okay the next step is to view the data
+
+627
+0:49:21.800 --> 0:49:28.840
+visualization and we will do that using a histogram for a couple of these columns so in this case
+
+628
+0:49:28.840 --> 0:49:34.840
+I am taking a look at the low numhount and if I create a histogram it displays the data here
+
+629
+0:49:34.840 --> 0:49:39.880
+in the form of a histogram one thing that we gather from this as I mentioned in the slides as well
+
+630
+0:49:39.880 --> 0:49:45.960
+is how the data is kind of scattered so while most of the values are in this range 0 to 300
+
+631
+0:49:46.280 --> 0:49:52.280
+there are a few extreme values around the 700 range so that is one information we get from this
+
+632
+0:49:52.280 --> 0:49:57.560
+histogram similarly for the applicant income if we draw histogram something similar we can see
+
+633
+0:49:57.560 --> 0:50:03.720
+that while most of the values are in this range 0 to 20000 range there are a few in the range of
+
+634
+0:50:03.720 --> 0:50:11.880
+80000 and probably 65000 and so on okay so the next step is to perform data wrangling where we will
+
+635
+0:50:11.960 --> 0:50:17.720
+check if any data is missing and how to fill those missing values and so on so in this case we will
+
+636
+0:50:17.720 --> 0:50:23.720
+just check for all the columns how many data or how many entries are there with missing values this is
+
+637
+0:50:23.720 --> 0:50:30.040
+the results alone I did has all the columns are all the cells filled gender has 13 missing values
+
+638
+0:50:30.040 --> 0:50:35.800
+metal status has 3 missing values and so on and so forth low numhount has 21 and this is what we are
+
+639
+0:50:35.800 --> 0:50:40.680
+going to show you how to remove these missing values so when you have missing values as I mentioned
+
+640
+0:50:41.000 --> 0:50:46.200
+during the slides there are a couple of ways of handling that one is you can completely remove those
+
+641
+0:50:46.200 --> 0:50:52.040
+or you fill in with some meaningful values so in this case we will fill the missing values with the
+
+642
+0:50:52.040 --> 0:50:59.160
+main value of the low numhount so let's go ahead and do that and now if we check here now
+
+643
+0:50:59.160 --> 0:51:04.840
+low numhount number of missing values is 0 because what we did was for all these 21 cells where
+
+644
+0:51:04.840 --> 0:51:09.640
+the values were missing we filled with the main value of the low numhount so now there are no more
+
+645
+0:51:09.640 --> 0:51:14.680
+missing values for low numhount we can do this for other columns as well but this was just one
+
+646
+0:51:14.680 --> 0:51:22.200
+example so we have shown it here okay so we will run this for credit history and low numhount term
+
+647
+0:51:22.200 --> 0:51:30.360
+as well and then if we calculate the mean of pretty much all the numerical columns that's the
+
+648
+0:51:30.360 --> 0:51:35.880
+method called so DF dot mean will give us the mean of all the numerical values and another thing
+
+649
+0:51:35.880 --> 0:51:40.920
+that we can do is we if you want to find out what are the data types of each of these columns so you
+
+650
+0:51:40.920 --> 0:51:46.360
+can call DF dot D types and get the data types of course they may not be that very useful most of
+
+651
+0:51:46.360 --> 0:51:53.640
+the cases is an object but for example this one it shows as n64 and there are float 64 and so on and so
+
+652
+0:51:53.640 --> 0:52:00.280
+forth now in addition to doing the exploratory data analysis we can do some machine learning activity
+
+653
+0:52:00.280 --> 0:52:05.560
+as well so in this case we are going to do logistic regression so this is the example that I have
+
+654
+0:52:05.560 --> 0:52:10.840
+shown you in the slides as well this is the actual code for that all right so the first step here
+
+655
+0:52:10.840 --> 0:52:18.200
+is to import the libraries and then the next step is to separate the independent variables and
+
+656
+0:52:18.200 --> 0:52:25.640
+the dependent variables so x is our independent variable and y is our dependent variable so we separate
+
+657
+0:52:25.640 --> 0:52:32.360
+the data into two parts and this will be our target as well right so that's how we separated now
+
+658
+0:52:32.440 --> 0:52:39.400
+we have to split the data into training and test data sets as I mentioned in the during the slides
+
+659
+0:52:39.400 --> 0:52:45.000
+we use the train test click method and when we call this and pass the independent variables
+
+660
+0:52:45.000 --> 0:52:52.040
+and the dependent variables and we specify the test size to be 0.25 which means the training size
+
+661
+0:52:52.040 --> 0:52:59.160
+will be 0.75 which is nothing but you split the data into training data set which is 75%
+
+662
+0:52:59.160 --> 0:53:06.440
+and test data set in which is 25%. Okay so once you split that you will have all your independent
+
+663
+0:53:06.440 --> 0:53:13.800
+variables data in x train the training data which is 75% of it similarly independent variables for
+
+664
+0:53:13.800 --> 0:53:20.280
+test will be in x underscore test and dependent variables train will be in y underscore train
+
+665
+0:53:20.280 --> 0:53:27.320
+and dependent variable test will be y underscore test once we do this we have to do a small exercise
+
+666
+0:53:27.320 --> 0:53:32.840
+for scaling remember we had some data which was kind of very scattered there were some extreme
+
+667
+0:53:32.840 --> 0:53:39.720
+values and so on so this will take care of that so that the data is normalized so that before we
+
+668
+0:53:39.720 --> 0:53:45.080
+pass to our algorithm the data is normalized so that the performance will be much better.
+
+669
+0:53:45.080 --> 0:53:51.080
+The next step is to create the instance of logistic regression object so that's what we are doing here
+
+670
+0:53:51.080 --> 0:53:56.920
+so classifier is our logistic regression instance right classifier is equal to logistic regression
+
+671
+0:53:57.000 --> 0:54:02.440
+we are saying so one instance of logistic regression is created and then we call the training method
+
+672
+0:54:02.440 --> 0:54:08.040
+the name of the method actually is fit but what it is doing is it is taking the training data x is
+
+673
+0:54:08.040 --> 0:54:12.840
+the training data or the independent variables and y is the dependent variables so we are taking
+
+674
+0:54:12.840 --> 0:54:19.160
+both of these and the model gets trained so the method for calling the training is fit okay so it
+
+675
+0:54:19.160 --> 0:54:26.440
+gives us the output and then once we are done with the training we do the testing and once again just
+
+676
+0:54:26.440 --> 0:54:31.720
+to recall in the slides when I was showing you the slides also I mentioned we don't pass y here
+
+677
+0:54:31.720 --> 0:54:38.280
+while we are testing while for training we do pass y but right so for fit we are passing x and y
+
+678
+0:54:38.280 --> 0:54:44.920
+but for test we are only passing x something you need to observe because y will be calculated
+
+679
+0:54:44.920 --> 0:54:51.320
+by the model and we will then compare that with the known value of y to measure the accuracy so that's
+
+680
+0:54:51.400 --> 0:54:58.040
+what we will do here and the method that is called here is predict so this will basically create or predict
+
+681
+0:54:58.040 --> 0:55:05.320
+the values of y now we have in this case a binary classification so the outputs are yes or no
+
+682
+0:55:05.320 --> 0:55:12.440
+y indicates yes and then indicates no so y or n is the output now how do we measure the accuracy as
+
+683
+0:55:12.440 --> 0:55:18.040
+we have seen earlier I described how confusion matrix works and how we can use confusion matrix
+
+684
+0:55:18.040 --> 0:55:23.400
+for calculating accuracy that's what we are seeing here so this is the confusion matrix and then
+
+685
+0:55:23.400 --> 0:55:30.040
+you want to do the measure the accuracy you can directly use this method and we find that it is 80% so
+
+686
+0:55:30.040 --> 0:55:35.240
+we in the slides we have seen when we calculate manually as well we get an accuracy of 80%.
+
+687
+0:55:35.240 --> 0:55:43.400
+okay let's go back to our slides and do a summary so what we have done in the session we talked
+
+688
+0:55:43.480 --> 0:55:51.160
+about what is data science and y python is being used why it is becoming so popular how to install
+
+689
+0:55:51.160 --> 0:55:57.960
+python and we talked about the various libraries in python like pandas, scipy, nampai and so on
+
+690
+0:55:57.960 --> 0:56:04.360
+and then we took a couple of examples and wrote the code and demonstrated the code for performing
+
+691
+0:56:04.360 --> 0:56:12.680
+exploratory analysis and performing data rangling or data manipulation and then we at the end we
+
+692
+0:56:12.760 --> 0:56:20.120
+did one example of machine learning using scikit learn library and performed the logistic regression
+
+693
+0:56:20.120 --> 0:56:26.840
+examples so with that we come to the end of the session if you have any queries comments please put
+
+694
+0:56:26.840 --> 0:56:33.480
+them below and you can also give your email ID so that we can get back to you if you have any questions
+
+695
+0:56:33.480 --> 0:56:36.040
+I hope you enjoyed the session thank you very much.
+
+696
+0:56:37.000 --> 0:56:45.880
+Hi there if you like this video subscribe to the simple learning youtube channel and click here to
+
+697
+0:56:45.880 --> 0:56:51.880
+watch similar videos turn it up and get certified click here
+

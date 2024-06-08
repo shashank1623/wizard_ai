@@ -1,0 +1,532 @@
+1
+0:00:00.000 --> 0:00:05.600
+See in this movie called Memento or the little ball of the movie called GUSNY.
+
+2
+0:00:05.600 --> 0:00:09.600
+Our basic RNNs are like the heroes of that movie.
+
+3
+0:00:09.600 --> 0:00:12.640
+They suffer from a short term memory problem.
+
+4
+0:00:12.640 --> 0:00:18.240
+LSTM is a special version of RNN which solves this short term memory problem.
+
+5
+0:00:18.240 --> 0:00:24.480
+And in this video I will explain LSTM in a very simple manner using real life examples.
+
+6
+0:00:24.480 --> 0:00:28.000
+Let's say you have NLP task for centers completion.
+
+7
+0:00:28.800 --> 0:00:33.280
+Here in both the sentences, based on what word appeared in the beginning,
+
+8
+0:00:34.000 --> 0:00:38.960
+your auto complete centers might be different. For example, for the first one,
+
+9
+0:00:38.960 --> 0:00:44.160
+I would say I need to take a loan, whereas for the second one, I would say I had to take a loan.
+
+10
+0:00:44.800 --> 0:00:51.440
+And this decision between need and head was made based on what appeared at the very beginning.
+
+11
+0:00:52.160 --> 0:00:56.080
+Now, looking at what traditional RNN architecture,
+
+12
+0:00:56.080 --> 0:01:01.600
+if you have seen my previous videos, you would know this is how RNN architecture looks like.
+
+13
+0:01:01.600 --> 0:01:05.840
+So if you are not seen those videos, I highly recommend you watch them because they are kind of a
+
+14
+0:01:05.840 --> 0:01:13.440
+prerequisite. Here, when you feel the sentence word by word, so first you will feel today.
+
+15
+0:01:14.400 --> 0:01:18.480
+It will learn some weights. There is an activation which is fed back.
+
+16
+0:01:19.120 --> 0:01:24.560
+Now you work on the second word which is due, then the third word which is two.
+
+17
+0:01:25.440 --> 0:01:30.800
+So this is how basic RNN works. If you enroll this thing in time,
+
+18
+0:01:31.520 --> 0:01:34.880
+then this is how the architecture will look like.
+
+19
+0:01:35.840 --> 0:01:40.480
+Many people get confused. The thing that this is a neural network with so many layers.
+
+20
+0:01:40.480 --> 0:01:46.000
+Actually, there is only one layer. Look at this time axis, T1, T2, T3.
+
+21
+0:01:46.080 --> 0:01:52.320
+So it's the same layer represented in different time and when you enroll it, this is how it looks.
+
+22
+0:01:52.960 --> 0:02:00.960
+Now to predict this word need, it needs to know about the word today, which appeared at the very beginning of the sentence.
+
+23
+0:02:01.680 --> 0:02:08.240
+And because of vanishing gradient problem, the traditional RNNs have short term memory.
+
+24
+0:02:08.240 --> 0:02:12.000
+So they don't remember what appeared in the beginning of the sentence.
+
+25
+0:02:12.080 --> 0:02:17.040
+They have a very short term memory of just few words which are like nearby.
+
+26
+0:02:17.840 --> 0:02:24.480
+Hence, to autocomplete this kind of sentence, RNN won't be able to do a good job.
+
+27
+0:02:26.400 --> 0:02:32.960
+Similarly, this is the second sentence, where head was derived based on the earlier word, which is last year.
+
+28
+0:02:32.960 --> 0:02:37.760
+Now let's look at the network layer a little more in detail.
+
+29
+0:02:38.160 --> 0:02:43.440
+So I'm going to just expand this particular network layer, which looks like this.
+
+30
+0:02:43.440 --> 0:02:49.440
+So there are set of neurons in that layer. And this hidden state is nothing but a short term memory.
+
+31
+0:02:50.400 --> 0:02:54.640
+So I'm just going to remove this neurons just to kind of make it simple.
+
+32
+0:02:55.440 --> 0:03:02.720
+And this square box is called a memory cell because this hidden state is actually containing
+
+33
+0:03:03.520 --> 0:03:10.320
+the short term memory. Now if you want to remember long term memory, we need to introduce
+
+34
+0:03:10.320 --> 0:03:16.800
+another state called long term memory. So that state is called C. So there are two states.
+
+35
+0:03:16.800 --> 0:03:23.520
+Now hidden state, which is short term memory. And there is a self state, which is a long term memory.
+
+36
+0:03:23.520 --> 0:03:26.800
+And we'll look into this in detail how exactly this will work.
+
+37
+0:03:27.680 --> 0:03:31.920
+But going back to our short term memory cell in traditional RNN,
+
+38
+0:03:32.960 --> 0:03:40.320
+it looks something like this. So I have drawn the vertical neurons here, but you can draw them
+
+39
+0:03:41.120 --> 0:03:47.840
+in a horizontal fashion as well. So it's just a layer of neurons in your ST and ST are vectors.
+
+40
+0:03:48.480 --> 0:03:53.200
+So when you have a word, for example, you will first convert into a vector.
+
+41
+0:03:53.200 --> 0:03:58.800
+Vector is nothing but a list of numbers. And your hidden state will be also a vector.
+
+42
+0:03:59.280 --> 0:04:04.880
+And using both these vectors, you will do, you know, like sigma operation, like a weighted
+
+43
+0:04:04.880 --> 0:04:11.200
+multiplication and then you apply activation function, which is which is tan h in the case of RNN.
+
+44
+0:04:11.200 --> 0:04:16.160
+And then you get a new hidden state. So here is a simplistic example.
+
+45
+0:04:16.960 --> 0:04:22.800
+So here you have tan h, you have weighted some going on. And this is how the short term memory cell
+
+46
+0:04:22.880 --> 0:04:31.600
+looks in traditional RNN. In LSTM, we are going to introduce a new cell state for a long term memory.
+
+47
+0:04:31.600 --> 0:04:36.960
+So let's say there is this cell state, okay. Now let's see how exactly this works by looking at
+
+48
+0:04:36.960 --> 0:04:44.800
+one more example. I love eating someosa by the way. So I have one more sentence for you to
+
+49
+0:04:44.800 --> 0:04:51.200
+autocomplete. Can you tell me what would you put here at dot dot dot? Well obviously,
+
+50
+0:04:51.280 --> 0:04:56.240
+Indian, Somosa is an Indian cuisine. So you will say his favorite cuisine is Indian.
+
+51
+0:04:56.960 --> 0:05:02.480
+Now take a pause and think about this. When is a human, when you make this case,
+
+52
+0:05:03.200 --> 0:05:11.040
+when you are processing the sentence, which words told you that this will be an Indian cuisine?
+
+53
+0:05:12.320 --> 0:05:19.280
+Well, it is this word, Somosa. If I didn't have Somosa here, if I had just had eats or every day,
+
+54
+0:05:19.360 --> 0:05:24.560
+it, so based on these words you can't guess, it is an Indian cuisine, right? There is some keywords.
+
+55
+0:05:25.440 --> 0:05:31.280
+If you are doing a movie review, for example, you are looking for keywords like, okay, excellent or
+
+56
+0:05:33.200 --> 0:05:38.160
+you know, terrible movie or amazing, the hero performed very well. So you are just looking
+
+57
+0:05:38.160 --> 0:05:46.080
+for specific words and the remaining words you can actually ignore. Now let's see how our traditional
+
+58
+0:05:46.160 --> 0:05:52.400
+RN would behave for this sentence. So traditional RNN, which is like, Amit Khan of Gusni,
+
+59
+0:05:52.400 --> 0:05:58.000
+having short term memory. When you feed all these words, it can remember only let's say last
+
+60
+0:05:58.000 --> 0:06:03.360
+two words. In reality RNNs can remember more words, but I'm just giving a simple example,
+
+61
+0:06:03.360 --> 0:06:08.000
+you know, just explain this concept. So let's say they have short term memory, just remember
+
+62
+0:06:08.000 --> 0:06:15.280
+only two words. So when you are at this sentence, almost for example, it remembers almost and the
+
+63
+0:06:15.360 --> 0:06:21.680
+Samosa, like the two words, last two words. When you are at here, cuisine is, it will
+
+64
+0:06:21.680 --> 0:06:28.000
+remember is and cuisine. So at this point, it doesn't have a knowledge of Samosa. So then for
+
+65
+0:06:28.000 --> 0:06:35.920
+traditional RNN, it is hard to make a guess that the cuisine is Indian. What if we build this
+
+66
+0:06:35.920 --> 0:06:42.800
+long term memory, along with short term memory, in such a way that we store the meaningful words
+
+67
+0:06:42.800 --> 0:06:50.000
+or the key words into this long term memory. So when I feed the world or each, it will not
+
+68
+0:06:50.000 --> 0:06:56.080
+store it. This is a blank string. It will not store it in a long term memory, but when you find things
+
+69
+0:06:56.080 --> 0:07:01.760
+like Samosa, it will store it in a long term memory. See Samosa, when you get almost, almost
+
+70
+0:07:01.760 --> 0:07:08.240
+is also not important. So I just store Samosa here. And when I go all the way here, now when I have
+
+71
+0:07:08.240 --> 0:07:14.400
+to make a prediction on cuisine, I have the memory that we are talking about Samosa and hands
+
+72
+0:07:14.400 --> 0:07:19.840
+it has to be Indian. Let's look at a little more complicated example.
+
+73
+0:07:21.760 --> 0:07:27.840
+Here, while I love Indian cuisine, my brother, Bobbin, Lowe's, which cuisine do you have any guess?
+
+74
+0:07:29.120 --> 0:07:34.720
+If you read the sentence carefully, you will figure it is an Italian cuisine. And you made that
+
+75
+0:07:34.800 --> 0:07:41.760
+decision based on the two keywords, which were pastas and cheese. So again, you are reading the sentence
+
+76
+0:07:42.480 --> 0:07:47.360
+and you are keeping some keywords in memory and throwing everything out like and that means
+
+77
+0:07:48.240 --> 0:07:52.400
+these are not important. For you, the important keywords are pastas and cheese.
+
+78
+0:07:53.280 --> 0:07:59.120
+Based on that, you make a decision that it is an Italian cuisine. So going back to our
+
+79
+0:08:00.000 --> 0:08:08.160
+R&N with long term memory. When you encounter, let's say Samosa used to or Samosa in your long term memory.
+
+80
+0:08:09.280 --> 0:08:17.760
+But you will keep on storing Samosa until you encounter pastas. So now the moment you encounter
+
+81
+0:08:17.760 --> 0:08:25.280
+pastas, you need to forget the previous long term memory, which is Samosa. So here, I threw
+
+82
+0:08:25.440 --> 0:08:32.640
+that thing out and I have new memory, which is pastas. And then you keep on preserving this until
+
+83
+0:08:32.640 --> 0:08:38.720
+you hit cheese. So when you hit cheese, you need to add that. So now you can't ignore pastas.
+
+84
+0:08:38.720 --> 0:08:46.960
+You need to add cheese on top of it. And then in then, when you are about to be asked,
+
+85
+0:08:48.160 --> 0:08:53.520
+what is your answer for autocomplete, you will say Italian because you have the memory of pastas and
+
+86
+0:08:53.600 --> 0:09:01.120
+cheese. Now you would ask me, how do you make this decision? How do you let's say when cheese comes,
+
+87
+0:09:01.840 --> 0:09:09.600
+you don't discard pastas. But when pastas comes, you discard Samosa. Well, all of this happens
+
+88
+0:09:09.600 --> 0:09:18.560
+during the training process. So when you are training your R&N, you are not giving only this
+
+89
+0:09:18.640 --> 0:09:24.640
+particular statement. This is this is a statement for prediction. When the training is happening,
+
+90
+0:09:24.640 --> 0:09:30.640
+you are giving thousands and thousands of such statements, which will build that understanding in R&N
+
+91
+0:09:31.360 --> 0:09:39.680
+on what to discard and what to store. So here we learnt a very important concept. So when you're
+
+92
+0:09:39.680 --> 0:09:46.000
+talking about LSTM or a long short term memory cell, so each of these cells are LSTM cells.
+
+93
+0:09:46.960 --> 0:09:54.080
+The first most important thing is the forget get. So the role of forget get is when you come
+
+94
+0:09:55.040 --> 0:10:02.480
+at this word pasta, it knows that it has to discard Samosa. So this is how forget get looks like.
+
+95
+0:10:03.920 --> 0:10:10.960
+So I have just expanded that cell, XT is a one word, you know, you process centers one word by one
+
+96
+0:10:11.920 --> 0:10:19.280
+and T is the timestamp. So that's why XT. So when you feed pastas into this forget get.
+
+97
+0:10:19.920 --> 0:10:26.720
+So the forget get is simple. You have previous hidden state. You take the current input, which is a
+
+98
+0:10:26.720 --> 0:10:33.680
+current word and you apply sigmoid function. Now you know that sigmoid function restricts your number
+
+99
+0:10:33.760 --> 0:10:41.600
+between 0 and 1. So it will if it has to discard the previous memory, it will output a vector,
+
+100
+0:10:41.600 --> 0:10:47.520
+which will have all 0s or all the values which are close to 0. And when you multiply that with
+
+101
+0:10:47.520 --> 0:10:53.920
+previous memory, which is previous cell state, you know you have a vector of less all 0s here
+
+102
+0:10:53.920 --> 0:10:59.760
+and you have another vector, which is a memory of previous cell state. The multiplication will of course
+
+103
+0:10:59.840 --> 0:11:06.960
+be 0 because you have discarded the previous memory, you know when this new word appeared.
+
+104
+0:11:06.960 --> 0:11:14.480
+So this is what a forget get looks like. So here you forgot about Samosa. Now there is another
+
+105
+0:11:15.120 --> 0:11:21.440
+thing which is an input get. So when pastas came, not only you forgot about Samosa, you need to add
+
+106
+0:11:21.440 --> 0:11:32.320
+a memory of pastas. So the way it will work is you will use sigmoid and tan h both on these two vectors.
+
+107
+0:11:33.120 --> 0:11:38.080
+So when you are doing by the way these vectors will have weight here. So there will be some weight
+
+108
+0:11:38.080 --> 0:11:45.280
+here, some weight here. So in this function what you are doing is ht minus 1 into that weight plus
+
+109
+0:11:45.920 --> 0:11:53.280
+xt into that weight plus bias and then you are applying tan h on top of it. And it's the same
+
+110
+0:11:53.280 --> 0:11:57.360
+equation here, the only difference is instead of tan h you are using sigmoid function.
+
+111
+0:11:58.720 --> 0:12:04.160
+And you multiply both of this output and then add that as a memory for this word.
+
+112
+0:12:05.280 --> 0:12:13.760
+The third one is output get. So in the output get, again you are doing weighted sum of hidden state
+
+113
+0:12:14.320 --> 0:12:22.400
+nxt and applying sigmoid function. Whatever is the output you take that and then you take long-term
+
+114
+0:12:22.400 --> 0:12:29.760
+memory, apply tan h and you multiply that and you will get your hidden state. So this will be your
+
+115
+0:12:29.760 --> 0:12:36.080
+hidden state. There are cases like length lesser the sentence autocomplete case that we are looking
+
+116
+0:12:36.400 --> 0:12:44.560
+at there is no variety actually. The state is carried using the short term memory. But
+
+117
+0:12:45.760 --> 0:12:52.800
+you know if there is a tan like a named entity recognition, there you need variety which is an output
+
+118
+0:12:52.800 --> 0:12:58.800
+and that output is same as ht. I mean you might apply sigmoid not sigmoid but let's say soft
+
+119
+0:12:58.800 --> 0:13:05.360
+max type of function here. But other than that it is kind of similar to ht. So now if you think about
+
+120
+0:13:05.440 --> 0:13:10.400
+the long term memory. So long term memory look at this line, look at this highway for example.
+
+121
+0:13:11.440 --> 0:13:16.880
+It has two things. Forget get an input to get. So forget get is like it will help you
+
+122
+0:13:16.880 --> 0:13:24.640
+forget things like simos or when pasta comes in and the input get will add new things into
+
+123
+0:13:24.640 --> 0:13:29.440
+memory. Like meaningful things you want to add in the memory. If it is a movie review you want to
+
+124
+0:13:29.520 --> 0:13:35.600
+add like horribile or amazing beautiful those kind of words. You know is the there are so many
+
+125
+0:13:35.600 --> 0:13:43.520
+words you don't care about. So that's what this LSTM will do and I'm going to refer you to a nice
+
+126
+0:13:43.520 --> 0:13:49.040
+article. I personally found this article to be very useful. I'm going to link in a video description
+
+127
+0:13:49.040 --> 0:13:55.520
+below. I did not mention any mathematical equation because you can use this article for any
+
+128
+0:13:56.480 --> 0:14:02.640
+here they explain how CT is calculated in terms of math formulas. So look at all math formulas.
+
+129
+0:14:02.640 --> 0:14:09.040
+Again I suggest you read this article properly because I myself have learned a lot from this and I
+
+130
+0:14:09.040 --> 0:14:16.320
+hope you found this video useful. If you did please give it a thumbs up share it with your friends.
+
+131
+0:14:17.760 --> 0:14:24.720
+I think this this can provide you a simple explanation of LSTM and in the
+
+132
+0:14:25.600 --> 0:14:33.680
+coming videos will be doing coding on LSTM will also be going over GRU in the future videos.
+
+133
+0:14:33.680 --> 0:14:38.880
+All right so till then thank you very much and bye.
+

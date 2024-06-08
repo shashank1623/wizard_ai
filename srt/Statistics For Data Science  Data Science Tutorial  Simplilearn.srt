@@ -1,0 +1,1052 @@
+1
+0:00:00.000 --> 0:00:13.800
+Let's begin this lesson by defining the term statistics.
+
+2
+0:00:13.800 --> 0:00:19.480
+Statistics is a mathematical science pertaining to the collection, presentation, analysis,
+
+3
+0:00:19.480 --> 0:00:21.560
+and interpretation of data.
+
+4
+0:00:21.560 --> 0:00:26.480
+It's widely used to understand the complex problems of the real world and simplify them
+
+5
+0:00:26.480 --> 0:00:29.320
+to make well-informed decisions.
+
+6
+0:00:29.320 --> 0:00:33.900
+Several statistical principles, functions and algorithms can be used to analyze primary
+
+7
+0:00:33.900 --> 0:00:39.240
+data, build a statistical model, and predict the outcomes.
+
+8
+0:00:39.240 --> 0:00:43.600
+An analysis of any situation can be done in two ways.
+
+9
+0:00:43.600 --> 0:00:48.080
+Statistical analysis or a non-statistical analysis.
+
+10
+0:00:48.080 --> 0:00:52.480
+Statistical analysis is the science of collecting, exploring, and presenting large amounts
+
+11
+0:00:52.480 --> 0:00:56.080
+of data to identify the patterns and trends.
+
+12
+0:00:56.080 --> 0:01:00.200
+Statistical analysis is also called quantitative analysis.
+
+13
+0:01:00.200 --> 0:01:05.280
+Non-statistical analysis provides generic information and includes text, sound, still
+
+14
+0:01:05.280 --> 0:01:07.840
+images, and moving images.
+
+15
+0:01:07.840 --> 0:01:12.400
+Non-statistical analysis is also called qualitative analysis.
+
+16
+0:01:12.400 --> 0:01:17.440
+Although both forms of analysis provide results, statistical analysis gives more insight
+
+17
+0:01:17.440 --> 0:01:19.200
+and a clearer picture.
+
+18
+0:01:19.200 --> 0:01:22.600
+A feature that makes it vital for businesses.
+
+19
+0:01:22.600 --> 0:01:29.560
+There are two major categories of statistics, descriptive statistics, and inferential statistics.
+
+20
+0:01:29.560 --> 0:01:34.520
+Descriptive statistics helps organize data and focuses on the main characteristics of the
+
+21
+0:01:34.520 --> 0:01:35.520
+data.
+
+22
+0:01:35.520 --> 0:01:39.680
+It provides a summary of the data numerically or graphically.
+
+23
+0:01:39.680 --> 0:01:45.320
+New miracle measures, such as average, mode, standard deviation, or SD, and correlation
+
+24
+0:01:45.320 --> 0:01:49.000
+are used to describe the features of a data set.
+
+25
+0:01:49.000 --> 0:01:52.440
+Suppose you want to study the height of students in a classroom.
+
+26
+0:01:52.440 --> 0:01:57.320
+In the descriptive statistics, you would record the height of every person in the classroom
+
+27
+0:01:57.320 --> 0:02:03.320
+and then find out the maximum height, minimum height, and average height of the population.
+
+28
+0:02:03.320 --> 0:02:08.560
+Inferential statistics generalizes the larger data set and applies probability theory
+
+29
+0:02:08.560 --> 0:02:10.360
+to draw a conclusion.
+
+30
+0:02:10.360 --> 0:02:15.280
+It allows you to infer population parameters based on the sample statistics and to model
+
+31
+0:02:15.280 --> 0:02:17.800
+relationships within the data.
+
+32
+0:02:17.800 --> 0:02:22.440
+Following allows you to develop mathematical equations which describe the interrelationships
+
+33
+0:02:22.440 --> 0:02:25.040
+between two or more variables.
+
+34
+0:02:25.040 --> 0:02:29.160
+Consider the same example of calculating the height of students in the classroom.
+
+35
+0:02:29.160 --> 0:02:35.160
+In inferential statistics, you would categorize height as tall, medium, and small, and then
+
+36
+0:02:35.160 --> 0:02:41.040
+take only a small sample from the population to study the height of students in the classroom.
+
+37
+0:02:41.040 --> 0:02:44.720
+The field of statistics touches our lives in many ways.
+
+38
+0:02:44.720 --> 0:02:49.360
+In the daily routines in our homes, to the business of making the greatest cities run,
+
+39
+0:02:49.360 --> 0:02:52.880
+the effective statistics are everywhere.
+
+40
+0:02:52.880 --> 0:02:58.440
+There are various statistical terms that one should be aware of while dealing with statistics.
+
+41
+0:02:58.440 --> 0:03:05.320
+Population, sample, variable, quantitative variable, qualitative variable, discrete variable,
+
+42
+0:03:05.320 --> 0:03:08.040
+continuous variable.
+
+43
+0:03:08.040 --> 0:03:12.840
+A population is the group from which data is to be collected.
+
+44
+0:03:12.840 --> 0:03:18.040
+A sample is a subset of a population.
+
+45
+0:03:18.040 --> 0:03:22.760
+A variable is a feature that is characteristic of any member of the population differing
+
+46
+0:03:22.760 --> 0:03:26.160
+in quality or quantity from another member.
+
+47
+0:03:26.160 --> 0:03:30.320
+A variable differing in quantity is called a quantitative variable.
+
+48
+0:03:30.320 --> 0:03:35.520
+For example, the weight of a person, a number of people in a car.
+
+49
+0:03:35.520 --> 0:03:40.400
+A variable differing in quality is called a qualitative variable or attribute.
+
+50
+0:03:40.400 --> 0:03:45.560
+For example, color, the degree of damage of a car in an accident.
+
+51
+0:03:45.560 --> 0:03:51.200
+A discrete variable is one which no value can be assumed between the two given values.
+
+52
+0:03:51.200 --> 0:03:55.200
+For example, the number of children in a family.
+
+53
+0:03:55.200 --> 0:04:01.400
+A continuous variable is one in which any value can be assumed between the two given values.
+
+54
+0:04:01.400 --> 0:04:05.760
+For example, the time taken for a 100 meter run.
+
+55
+0:04:05.760 --> 0:04:10.640
+Typically, there are four types of statistical measures used to describe the data.
+
+56
+0:04:10.640 --> 0:04:17.040
+They are measures of frequency, measures of central tendency, measures of spread, measures of
+
+57
+0:04:17.040 --> 0:04:18.560
+position.
+
+58
+0:04:18.560 --> 0:04:21.040
+Let's learn each and detail.
+
+59
+0:04:21.040 --> 0:04:25.240
+Frequency of the data indicates the number of times a particular data value occurs
+
+60
+0:04:25.240 --> 0:04:27.160
+in the given data set.
+
+61
+0:04:27.160 --> 0:04:31.520
+The measures of frequency are number and percentage.
+
+62
+0:04:31.560 --> 0:04:35.160
+The measure of central tendency indicates whether the data values tend to accumulate in the
+
+63
+0:04:35.160 --> 0:04:38.400
+middle of the distribution or toward the end.
+
+64
+0:04:38.400 --> 0:04:44.240
+The measures of central tendency are mean, median, and mode.
+
+65
+0:04:44.240 --> 0:04:50.280
+Spread describes how similar or varied the set of observed values are for a particular variable.
+
+66
+0:04:50.280 --> 0:04:55.240
+The measures of spread are standard deviation, variance, and quartiles.
+
+67
+0:04:55.240 --> 0:04:59.640
+The measure of spread are also called measures of dispersion.
+
+68
+0:04:59.640 --> 0:05:05.120
+Position identifies the exact location of a particular data value in the given data set.
+
+69
+0:05:05.120 --> 0:05:10.240
+The measures of position are percentiles, quartiles, and standard scores.
+
+70
+0:05:10.240 --> 0:05:15.520
+Statistical analysis system or SAS provides a list of procedures to perform descriptive
+
+71
+0:05:15.520 --> 0:05:16.880
+statistics.
+
+72
+0:05:16.880 --> 0:05:18.800
+They are as follows.
+
+73
+0:05:18.800 --> 0:05:28.440
+Proct print, proc contents, proc means, proc frequency, proc univariate, proc g-charc, proc box
+
+74
+0:05:28.520 --> 0:05:36.600
+plot, proc g-plot, proc print, it prints all the variables in a SAS data set.
+
+75
+0:05:36.600 --> 0:05:41.600
+Proct contents, it describes the structure of a data set.
+
+76
+0:05:41.600 --> 0:05:46.920
+Proct means it provides data summarization tools to compute descriptive statistics for
+
+77
+0:05:46.920 --> 0:05:53.040
+variables across all observations and within the groups of observations.
+
+78
+0:05:53.040 --> 0:05:59.720
+Proct frequency, it produces one way to in-way frequency and cross-tabulation tables.
+
+79
+0:05:59.720 --> 0:06:05.360
+Frequencies can also be an output of a SAS data set.
+
+80
+0:06:05.360 --> 0:06:11.360
+Proct univariate, it goes beyond what proc means does, and is useful in conducting some basic
+
+81
+0:06:11.360 --> 0:06:16.640
+statistical analyses and includes high-resolution graphical features.
+
+82
+0:06:16.640 --> 0:06:23.000
+Proct g-charc, the g-charc procedure produces six types of charts, block charts, horizontal
+
+83
+0:06:23.040 --> 0:06:27.960
+bar charts, pi, donut charts, and star charts.
+
+84
+0:06:27.960 --> 0:06:33.120
+These charts graphically represent the value of a statistic calculated for one or more variables
+
+85
+0:06:33.120 --> 0:06:35.520
+in an input SAS data set.
+
+86
+0:06:35.520 --> 0:06:40.760
+The trig variables can be either numeric or character.
+
+87
+0:06:40.760 --> 0:06:46.920
+Proct box plot, the box plot procedure creates side-by-side box and whisker plots of measurements
+
+88
+0:06:46.920 --> 0:06:48.760
+organized in groups.
+
+89
+0:06:48.800 --> 0:06:54.160
+Proct box and whisker plot displays the mean, quartiles, and minimum and maximum observations
+
+90
+0:06:54.160 --> 0:06:56.680
+for a group.
+
+91
+0:06:56.680 --> 0:07:03.160
+Proct g-plot, g-plot procedure creates two-dimensional graphs, including simple scatter plots,
+
+92
+0:07:03.160 --> 0:07:08.720
+overlay plots, in which multiple sets of data points are displayed on one set of axis,
+
+93
+0:07:08.720 --> 0:07:14.280
+plots against the second vertical axis, bubble plots, and logarithmic plots.
+
+94
+0:07:14.320 --> 0:07:19.040
+In this demo, you'll learn how to use descriptive statistics to analyze the mean from the
+
+95
+0:07:19.040 --> 0:07:21.160
+electronic data set.
+
+96
+0:07:21.160 --> 0:07:25.160
+Let's import the electronic data set into the SAS console.
+
+97
+0:07:25.160 --> 0:07:33.160
+In the left plane, right-click the electronic dot XL SX data set and click import data.
+
+98
+0:07:33.160 --> 0:07:36.520
+The code to import the data generates automatically.
+
+99
+0:07:36.520 --> 0:07:38.840
+Copy the code and paste it in the new window.
+
+100
+0:07:45.280 --> 0:07:51.280
+The Proct means procedure is used to analyze the mean of the imported data set.
+
+101
+0:07:53.280 --> 0:07:57.280
+The keyword data identifies the input data set.
+
+102
+0:07:57.280 --> 0:08:02.280
+In this demo, the input data set is electronic.
+
+103
+0:08:02.280 --> 0:08:07.280
+The output obtained is shown on the screen.
+
+104
+0:08:07.280 --> 0:08:13.880
+Note that the number of observations mean standard deviation and maximum and minimum values of the
+
+105
+0:08:13.880 --> 0:08:17.880
+electronic data set are obtained.
+
+106
+0:08:17.880 --> 0:08:22.520
+This concludes the demo on how to use descriptive statistics to analyze the mean from the
+
+107
+0:08:22.520 --> 0:08:24.400
+electronic data set.
+
+108
+0:08:24.400 --> 0:08:27.600
+So far, you've learned about descriptive statistics.
+
+109
+0:08:27.600 --> 0:08:31.200
+Let's now learn about inferential statistics.
+
+110
+0:08:31.200 --> 0:08:36.120
+Hypothesis testing is an inferential statistical technique to determine whether there is
+
+111
+0:08:36.120 --> 0:08:41.160
+enough evidence in a data sample to infer that a certain condition holds true for the entire
+
+112
+0:08:41.160 --> 0:08:42.600
+population.
+
+113
+0:08:42.600 --> 0:08:47.720
+To understand the characteristics of the general population, we take a random sample and analyze
+
+114
+0:08:47.720 --> 0:08:49.840
+the properties of the sample.
+
+115
+0:08:49.840 --> 0:08:54.360
+We then test whether or not the identified conclusions correctly represent the population
+
+116
+0:08:54.360 --> 0:08:55.840
+as a whole.
+
+117
+0:08:55.840 --> 0:09:01.520
+The population of hypothesis testing is to choose between two competing hypotheses about the value
+
+118
+0:09:01.520 --> 0:09:04.160
+of a population parameter.
+
+119
+0:09:04.160 --> 0:09:09.720
+For example, one hypothesis might claim that the wages of men and women are equal, while
+
+120
+0:09:09.720 --> 0:09:13.720
+the other might claim that women make more than men.
+
+121
+0:09:13.720 --> 0:09:18.040
+Hypothesis testing is formulated in terms of two hypotheses.
+
+122
+0:09:18.040 --> 0:09:22.040
+No hypothesis, which is referred to as H. No.
+
+123
+0:09:22.040 --> 0:09:26.280
+Alternative hypothesis, which is referred to as H. 1.
+
+124
+0:09:26.280 --> 0:09:31.920
+The no hypothesis is assumed to be true, unless there is strong evidence to the contrary.
+
+125
+0:09:31.920 --> 0:09:37.800
+The alternative hypothesis is assumed to be true when the no hypothesis is proven false.
+
+126
+0:09:37.800 --> 0:09:43.680
+Let's understand the no hypothesis and alternative hypothesis using a general example.
+
+127
+0:09:43.680 --> 0:09:48.800
+No hypothesis attempts to show that no variation exists between variables and alternative
+
+128
+0:09:48.800 --> 0:09:52.680
+hypothesis is any hypothesis other than the no.
+
+129
+0:09:52.680 --> 0:09:57.800
+For example, say a pharmaceutical company has introduced a medicine in the market for a particular
+
+130
+0:09:57.800 --> 0:10:02.920
+disease and people have been using it for a considerable period of time and it's generally
+
+131
+0:10:02.920 --> 0:10:04.680
+considered safe.
+
+132
+0:10:04.680 --> 0:10:10.320
+If the medicine is proved to be safe, then it is referred to as no hypothesis.
+
+133
+0:10:10.320 --> 0:10:15.240
+To reject no hypothesis, we should prove that the medicine is unsafe.
+
+134
+0:10:15.240 --> 0:10:21.320
+If the no hypothesis is rejected, then the alternative hypothesis is used.
+
+135
+0:10:21.320 --> 0:10:26.280
+Before you perform any statistical tests with variables, it's significant to recognize
+
+136
+0:10:26.280 --> 0:10:29.040
+the nature of the variables involved.
+
+137
+0:10:29.040 --> 0:10:34.200
+Based on the nature of the variables, it's classified into four types.
+
+138
+0:10:34.200 --> 0:10:40.760
+They are categorical or nominal variables, ordinal variables, interval variables, and ratio
+
+139
+0:10:40.760 --> 0:10:42.800
+variables.
+
+140
+0:10:42.800 --> 0:10:47.400
+Nominal variables are one to which have two or more categories and it's impossible to order
+
+141
+0:10:47.400 --> 0:10:49.080
+the values.
+
+142
+0:10:49.080 --> 0:10:53.360
+Examples of nominal variables include gender and blood group.
+
+143
+0:10:53.360 --> 0:10:56.360
+Ordinal variables have values ordered logically.
+
+144
+0:10:56.360 --> 0:11:00.960
+However, the relative distance between two data values is not clear.
+
+145
+0:11:00.960 --> 0:11:05.880
+Examples of ordinal variables include considering the size of a coffee cup, large, medium
+
+146
+0:11:05.880 --> 0:11:12.120
+and small, and considering the ratings of a product, bad, good, and best.
+
+147
+0:11:12.120 --> 0:11:16.400
+Interval variables are similar to ordinal variables, except that the values are measured
+
+148
+0:11:16.400 --> 0:11:19.640
+in a way where their differences are meaningful.
+
+149
+0:11:19.640 --> 0:11:24.600
+With an interval scale, equal differences between scale values do have equal quantitative
+
+150
+0:11:24.600 --> 0:11:25.760
+meaning.
+
+151
+0:11:25.760 --> 0:11:30.360
+For this reason, an interval scale provides more quantitative information than the ordinal
+
+152
+0:11:30.440 --> 0:11:31.680
+scale.
+
+153
+0:11:31.680 --> 0:11:34.680
+The interval scale does not have a true zero point.
+
+154
+0:11:34.680 --> 0:11:39.720
+A true zero point means that a value of zero on the scale represents zero quantity of
+
+155
+0:11:39.720 --> 0:11:42.280
+the construct being assessed.
+
+156
+0:11:42.280 --> 0:11:47.280
+Examples of interval variables include the Fahrenheit scale used to measure temperature and
+
+157
+0:11:47.280 --> 0:11:51.320
+the distance between two compartments in a train.
+
+158
+0:11:51.320 --> 0:11:56.280
+Ratioscales are similar to interval scales, and that equal differences between scale values
+
+159
+0:11:56.280 --> 0:11:58.880
+have equal quantitative meaning.
+
+160
+0:11:58.920 --> 0:12:04.480
+However, ratio scales also have a true zero point, which gives them an additional property.
+
+161
+0:12:04.480 --> 0:12:10.640
+For example, the system of inches used with a common ruler is an example of a ratio scale.
+
+162
+0:12:10.640 --> 0:12:15.520
+There is a true zero point because zero inches does in fact indicate a complete absence
+
+163
+0:12:15.520 --> 0:12:17.520
+of length.
+
+164
+0:12:17.520 --> 0:12:24.160
+In this demo, you'll learn how to perform the hypothesis testing using SAS.
+
+165
+0:12:24.160 --> 0:12:30.600
+For this example, let's check against the length of certain observations from a random sample.
+
+166
+0:12:30.600 --> 0:12:35.880
+The keyword data identifies the input data set.
+
+167
+0:12:35.880 --> 0:12:41.040
+The input statement is used to declare the aging variable and cards to read data into
+
+168
+0:12:41.040 --> 0:12:41.520
+SAS.
+
+169
+0:12:54.400 --> 0:13:01.160
+Let's perform a T test to check the null hypothesis.
+
+170
+0:13:04.280 --> 0:13:13.280
+Let's assume that the null hypothesis to be that the mean days to the liver a product is six days.
+
+171
+0:13:13.280 --> 0:13:16.320
+So null hypothesis equals six.
+
+172
+0:13:16.320 --> 0:13:22.240
+Alpha value is the probability of making an error, which is 5% standard, and hence alpha
+
+173
+0:13:22.240 --> 0:13:26.720
+equals zero point zero five.
+
+174
+0:13:26.720 --> 0:13:41.680
+The variable statement names the variable to be used in the analysis.
+
+175
+0:13:41.680 --> 0:13:46.160
+The output is shown on the screen.
+
+176
+0:13:46.160 --> 0:13:51.360
+Note that the p value is greater than the alpha value, which is zero point zero five.
+
+177
+0:13:51.360 --> 0:13:57.120
+Therefore, we fail to reject the null hypothesis.
+
+178
+0:13:57.120 --> 0:14:03.240
+This concludes the demo on how to perform the hypothesis testing using SAS.
+
+179
+0:14:03.240 --> 0:14:06.440
+Let's now learn about hypothesis testing procedures.
+
+180
+0:14:06.440 --> 0:14:09.640
+There are two types of hypothesis testing procedures.
+
+181
+0:14:09.640 --> 0:14:13.840
+They are parametric tests and non-parametric tests.
+
+182
+0:14:13.840 --> 0:14:17.040
+Institistical inference or hypothesis testing.
+
+183
+0:14:17.080 --> 0:14:22.840
+The traditional tests, such as T test and ANOVA, are called parametric tests.
+
+184
+0:14:22.840 --> 0:14:27.880
+They depend on the specification of a probability distribution except for a set of free
+
+185
+0:14:27.880 --> 0:14:29.360
+parameters.
+
+186
+0:14:29.360 --> 0:14:34.680
+In simple words, you can say that if the population information is known completely by its
+
+187
+0:14:34.680 --> 0:14:38.640
+parameter, then it is called a parametric test.
+
+188
+0:14:38.640 --> 0:14:43.760
+If the population or parameter information is not known and you are still required to test
+
+189
+0:14:43.800 --> 0:14:49.480
+the hypothesis of the population, then it's called a non-parametric test.
+
+190
+0:14:49.480 --> 0:14:54.320
+Non-parametric tests do not require any strict distributional assumptions.
+
+191
+0:14:54.320 --> 0:14:56.480
+There are various parametric tests.
+
+192
+0:14:56.480 --> 0:14:58.040
+They are as follows.
+
+193
+0:14:58.040 --> 0:15:03.640
+T test, ANOVA, CHI-squared, linear regression.
+
+194
+0:15:03.640 --> 0:15:06.120
+Let's understand them in detail.
+
+195
+0:15:06.120 --> 0:15:07.680
+T test.
+
+196
+0:15:07.680 --> 0:15:12.760
+A T test determines if two sets of data are significantly different from each other.
+
+197
+0:15:12.760 --> 0:15:16.640
+The T test is used in the following situations.
+
+198
+0:15:16.640 --> 0:15:21.640
+To test if the mean is significantly different than a hypothesized value.
+
+199
+0:15:21.640 --> 0:15:26.520
+To test if the mean for two independent groups is significantly different.
+
+200
+0:15:26.520 --> 0:15:33.200
+To test if the mean for two dependent or paired groups is significantly different.
+
+201
+0:15:33.200 --> 0:15:37.960
+For example, let's say you have to find out which region spends the highest amount of
+
+202
+0:15:37.960 --> 0:15:39.320
+money on shopping.
+
+203
+0:15:39.640 --> 0:15:45.440
+It's impractical to ask everyone in the different regions about their shopping expenditure.
+
+204
+0:15:45.440 --> 0:15:50.840
+In this case, you can calculate the highest shopping expenditure by collecting sample observations
+
+205
+0:15:50.840 --> 0:15:52.720
+from each region.
+
+206
+0:15:52.720 --> 0:15:57.600
+With the help of the T test, you can check as the difference between the regions are significant
+
+207
+0:15:57.600 --> 0:16:00.960
+or a statistical fluke.
+
+208
+0:16:00.960 --> 0:16:02.440
+ANOVA.
+
+209
+0:16:02.440 --> 0:16:07.640
+ANOVA is a generalized version of the T test and used when the mean of the interval dependent
+
+210
+0:16:07.720 --> 0:16:11.960
+variable is different to the categorical independent variable.
+
+211
+0:16:11.960 --> 0:16:18.720
+When we want to check variants between two or more groups, we apply the ANOVA test.
+
+212
+0:16:18.720 --> 0:16:23.240
+For example, let's look at the same example of the T test example.
+
+213
+0:16:23.240 --> 0:16:28.240
+Now you want to check how much people in various regions spend every month on shopping.
+
+214
+0:16:28.240 --> 0:16:34.320
+In this case, there are four groups, namely East, West, North and South.
+
+215
+0:16:34.360 --> 0:16:39.280
+With the help of the ANOVA test, you can check if the difference between the regions is significant
+
+216
+0:16:39.280 --> 0:16:42.680
+or a statistical fluke.
+
+217
+0:16:42.680 --> 0:16:44.640
+CHI-square.
+
+218
+0:16:44.640 --> 0:16:49.400
+CHI-square is a statistical test used to compare observed data with data you would expect
+
+219
+0:16:49.400 --> 0:16:53.440
+to obtain according to a specific hypothesis.
+
+220
+0:16:53.440 --> 0:16:56.880
+Let's understand the CHI-square test through an example.
+
+221
+0:16:56.880 --> 0:17:00.560
+You have a data set of male shoppers and female shoppers.
+
+222
+0:17:00.600 --> 0:17:05.560
+You say you need to assess whether the probability of females purchasing items of $500 or
+
+223
+0:17:05.560 --> 0:17:12.960
+more is significantly different from the probability of males purchasing items of $500 or more.
+
+224
+0:17:12.960 --> 0:17:14.880
+Linear regression.
+
+225
+0:17:14.880 --> 0:17:21.840
+There are two types of linear regression, simple linear regression and multiple linear regression.
+
+226
+0:17:21.840 --> 0:17:26.760
+Simple linear regression is used when one wants to test how well a variable predicts another
+
+227
+0:17:26.760 --> 0:17:28.440
+variable.
+
+228
+0:17:28.440 --> 0:17:33.320
+A variable linear regression allows one to test how well multiple variables or independent
+
+229
+0:17:33.320 --> 0:17:36.600
+variables predict a variable of interest.
+
+230
+0:17:36.600 --> 0:17:42.000
+When using multiple linear regression, we additionally assume the predictor variables are
+
+231
+0:17:42.000 --> 0:17:44.280
+independent.
+
+232
+0:17:44.280 --> 0:17:49.840
+For example, finding a relationship between any two variables, say sales and profit, is called
+
+233
+0:17:49.840 --> 0:17:52.600
+simple linear regression.
+
+234
+0:17:52.600 --> 0:17:57.640
+Finding a relationship between any three variables, say sales, cost, telemarketing, is called
+
+235
+0:17:57.680 --> 0:18:00.160
+multiple linear regression.
+
+236
+0:18:00.160 --> 0:18:06.800
+Some of the non-parametric tests are Wilcoxon-Rank some tests and Questical Wallace H test.
+
+237
+0:18:06.800 --> 0:18:09.120
+Wilcoxon-Rank some tests.
+
+238
+0:18:09.120 --> 0:18:15.200
+The Wilcoxon signed ranked test is a non-parametric statistical hypothesis test used to compare
+
+239
+0:18:15.200 --> 0:18:20.640
+two related samples or matched samples to assess whether or not their population mean ranks
+
+240
+0:18:20.640 --> 0:18:21.840
+differ.
+
+241
+0:18:21.840 --> 0:18:27.000
+In Wilcoxon-Rank some tests, you can test the null hypothesis on the basis of the ranks
+
+242
+0:18:27.000 --> 0:18:29.240
+of the observations.
+
+243
+0:18:29.240 --> 0:18:35.720
+Questical Wallace H test Questical Wallace H test is a rank-based non-parametric test used
+
+244
+0:18:35.720 --> 0:18:40.360
+to compare independent samples of equal or different sample sizes.
+
+245
+0:18:40.360 --> 0:18:45.360
+In this test, you can test the null hypothesis on the basis of the ranks of the independent
+
+246
+0:18:45.360 --> 0:18:46.600
+samples.
+
+247
+0:18:46.600 --> 0:18:50.360
+The advantages of parametric tests are as follows.
+
+248
+0:18:50.360 --> 0:18:56.480
+Provide information about the population in terms of parameters and confidence intervals.
+
+249
+0:18:56.480 --> 0:19:01.200
+Continue to use in modeling, analyzing, and for describing data with central tendencies
+
+250
+0:19:01.200 --> 0:19:04.560
+and data transformations.
+
+251
+0:19:04.560 --> 0:19:08.480
+Express the relationship between two or more variables.
+
+252
+0:19:08.480 --> 0:19:12.560
+Don't need to convert data into rank order to test.
+
+253
+0:19:12.560 --> 0:19:16.880
+The disadvantages of parametric tests are as follows.
+
+254
+0:19:16.880 --> 0:19:24.160
+Only support normally distributed data, only applicable on variables, not attributes.
+
+255
+0:19:24.240 --> 0:19:29.120
+Let's now list the advantages and disadvantages of non-parametric tests.
+
+256
+0:19:29.120 --> 0:19:33.080
+The advantages of non-parametric tests are as follows.
+
+257
+0:19:33.080 --> 0:19:35.800
+Simple and easy to understand.
+
+258
+0:19:35.800 --> 0:19:39.960
+Do not involve population parameters and sampling theory.
+
+259
+0:19:39.960 --> 0:19:42.280
+Make fewer assumptions.
+
+260
+0:19:42.280 --> 0:19:45.880
+Provide results similar to parametric procedures.
+
+261
+0:19:45.880 --> 0:19:50.600
+The disadvantages of non-parametric tests are as follows.
+
+262
+0:19:50.680 --> 0:19:53.680
+Not as efficient as parametric tests.
+
+263
+0:19:53.680 --> 0:19:57.880
+Difficult to perform operations on large samples manually.
+

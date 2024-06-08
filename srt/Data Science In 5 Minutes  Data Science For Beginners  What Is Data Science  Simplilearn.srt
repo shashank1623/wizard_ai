@@ -1,0 +1,240 @@
+1
+0:00:00.000 --> 0:00:04.000
+Are you one of the many who dreams of becoming a data scientist?
+
+2
+0:00:04.000 --> 0:00:08.000
+Keep watching this video if you're passionate about data science because we will tell you
+
+3
+0:00:08.000 --> 0:00:10.000
+how does the dream work under the hood?
+
+4
+0:00:10.000 --> 0:00:12.000
+Am I as a data scientist?
+
+5
+0:00:12.000 --> 0:00:16.000
+Let's see how a day in a life course while she's working on a data science project.
+
+6
+0:00:16.000 --> 0:00:20.000
+Well, it is very important to understand the business problem first.
+
+7
+0:00:20.000 --> 0:00:22.000
+In our meeting with the clients,
+
+8
+0:00:22.000 --> 0:00:24.000
+Am I asked relevant questions?
+
+9
+0:00:24.000 --> 0:00:28.000
+Understands and defines objectives for the problem that needs to be tackled?
+
+10
+0:00:28.000 --> 0:00:32.000
+She's a cutest soul who asks a lot of advice.
+
+11
+0:00:32.000 --> 0:00:34.000
+One of the many traits of a good data scientist.
+
+12
+0:00:34.000 --> 0:00:38.000
+Now, she cares up for data acquisition.
+
+13
+0:00:38.000 --> 0:00:40.000
+To gather and scrape data from multiple sources like web servers,
+
+14
+0:00:40.000 --> 0:00:44.000
+logs, databases, APIs, and online depositories.
+
+15
+0:00:44.000 --> 0:00:48.000
+Oh, it seems like finding the right data takes both time and effort.
+
+16
+0:00:48.000 --> 0:00:52.000
+After the data is gathered, come data preparation.
+
+17
+0:00:52.000 --> 0:00:56.000
+This step involves data cleaning and data transformation.
+
+18
+0:00:56.000 --> 0:01:02.000
+Data cleaning is the most time consuming process as it involves handling many complex scenarios.
+
+19
+0:01:02.000 --> 0:01:06.000
+Here, Am I dealing with inconsistent data types,
+
+20
+0:01:06.000 --> 0:01:10.000
+miss failed attributes, missing values, duplicate values, and whatnot.
+
+21
+0:01:10.000 --> 0:01:16.000
+Then, in data transformation, she modifies the data based on defined mapping rules.
+
+22
+0:01:16.000 --> 0:01:22.000
+In a project, ETL tools like talent and infamatica are used to perform complex transformations
+
+23
+0:01:22.000 --> 0:01:24.000
+that helps the team to understand the data structure better.
+
+24
+0:01:24.000 --> 0:01:28.000
+Then, understanding what you actually can do with your data is very crucial.
+
+25
+0:01:28.000 --> 0:01:32.000
+For that, Am I does exploratory data analysis?
+
+26
+0:01:32.000 --> 0:01:38.000
+With the help of EDA, she defines and defines the selection of feature labels that will be used in the
+
+27
+0:01:38.000 --> 0:01:42.000
+model development. But what if Am I skip step? She might end up choosing the wrong way to
+
+28
+0:01:42.000 --> 0:01:48.000
+use which will produce an inaccurate model. Does exploratory data analysis becomes the most
+
+29
+0:01:48.000 --> 0:01:52.000
+important step. Now, she proceeds to the core activity of a data science project.
+
+30
+0:01:52.000 --> 0:01:58.000
+Which is data modeling. She will rapidly apply type 4 machine learning techniques like
+
+31
+0:01:58.000 --> 0:02:06.000
+Canon, decision tree, knife base, to the data to identify the model that best fits the business requirement.
+
+32
+0:02:06.000 --> 0:02:12.000
+She trains the models on the training data set and test them to select the best performing model.
+
+33
+0:02:12.000 --> 0:02:14.000
+Am I prefers Python for modeling the data?
+
+34
+0:02:14.000 --> 0:02:18.000
+However, it can also be done using R and SAS.
+
+35
+0:02:18.000 --> 0:02:23.200
+Well, the trickiest part is not yet over. Visualization and communication.
+
+36
+0:02:23.200 --> 0:02:28.400
+Am I made the clients again to communicate with business findings in a simple and effective
+
+37
+0:02:28.400 --> 0:02:34.000
+manner to convince the stakeholders? She uses tools like Tablo, Power BI and ClickView.
+
+38
+0:02:34.000 --> 0:02:38.000
+That can help her in creating powerful reports and dashboards.
+
+39
+0:02:38.000 --> 0:02:44.000
+And then finally, she deploys and maintains the model. She tests the selected model in a pre-production
+
+40
+0:02:44.000 --> 0:02:49.200
+environment before deploying it in the production environment. This is the best practice right?
+
+41
+0:02:49.200 --> 0:02:55.440
+After successfully deploying it, she uses reports and dashboards to get real-time analytics.
+
+42
+0:02:55.440 --> 0:02:59.280
+Further, she also monitors and maintains the projects performance.
+
+43
+0:02:59.280 --> 0:03:02.400
+Well, that's how Emma completes the data science project.
+
+44
+0:03:02.400 --> 0:03:07.840
+We have seen the daily routine of a data scientist is a whole lot of fun, has a lot of interesting
+
+45
+0:03:07.840 --> 0:03:13.280
+aspects and comes with its own share of challenges. Now, let's see how data science is
+
+46
+0:03:13.360 --> 0:03:19.200
+changing the world. Data science techniques along with genomic data provide a deeper understanding
+
+47
+0:03:19.200 --> 0:03:25.440
+of genetic issues in reaction to particular drugs and diseases. Logistic companies like DHL,
+
+48
+0:03:25.440 --> 0:03:29.840
+FedEx, have discovered the best rules to ship the best suited time to deliver.
+
+49
+0:03:29.840 --> 0:03:34.480
+The best mode of transport to choose does leading to cost efficiency.
+
+50
+0:03:34.480 --> 0:03:39.280
+With data science, it is possible to not only predict employee attrition,
+
+51
+0:03:39.280 --> 0:03:44.080
+but to also understand the key variables that influence employee turnover.
+
+52
+0:03:44.080 --> 0:03:49.840
+Also, the airline companies can now easily predict flight delay and notify the passengers
+
+53
+0:03:49.840 --> 0:03:55.360
+beforehand to enhance their travel experience. Well, if you're wondering, there are various rules
+
+54
+0:03:55.360 --> 0:04:01.760
+offered to a data scientist. Like data analyst, machine learning engineer, deep learning engineer,
+
+55
+0:04:01.760 --> 0:04:07.840
+data engineer, and of course data scientists. The median base salaries of the data scientists
+
+56
+0:04:07.840 --> 0:04:15.360
+can range from $95,000 to $165,000. So that was about the data science. I already
+
+57
+0:04:15.360 --> 0:04:21.920
+did a data scientist. If yes, then start today. The world of data needs you. That's all from my
+
+58
+0:04:21.920 --> 0:04:26.240
+side today. Thank you for watching. Comment below the next topic that you want to learn and
+
+59
+0:04:26.240 --> 0:04:31.440
+subscribe to simply learn to get the latest updates on more such interesting videos. Thank you
+
+60
+0:04:31.440 --> 0:04:35.840
+and keep learning.
+

@@ -1,159 +1,106 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-  <title>Wizard.ai - Your ai partner for transcribing and understanding Human</title>
-  <style>
-    form {
-      width: 400px;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 12px;
-    }
-
-    input[type=text],
-    input[type=file] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 10px 0;
-      box-sizing: border-box;
-      border: 2px solid rgb(172, 172, 172);
-      border-radius: 15px;
-    }
-
-    input[type=submit] {
-      width: 100%;
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: large;
-    }
-
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-
-    body {
-      background-color: #f0f0f0;
-    }
-
-    label {
-      font-size: 18px;
-      font-weight: bold;
-      width: 100%;
-    }
-
-    textarea {
-      width: 100%;
-      height: 300px;
-      padding: 12px 20px;
-      box-sizing: border-box;
-      border: 1px solid rgb(194, 194, 194);
-      box-shadow: 1px 1px 1px #999;
-      border-radius: 5px;
-      background-color: #ffffff;
-      font-size: 16px;
-      resize: none;
-      display: block;
-    }
-
-    header {
-      background-color: #34495e;
-      /* Change to your desired background color */
-      color: #fff;
-      /* Change to your desired text color */
-      padding: 5px 0;
-      margin-top: -8px;
-      margin-left: -8px;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
-    }
-
-    .logo h1 a {
-      color: #fff;
-      /* Change to your desired text color */
-      text-decoration: none;
-      font-size: 36px;
-      /* Adjust the font size as desired */
-      font-weight: bold;
-      margin-left: 15px;
-    }
-
-    .logo h1 a span {
-      color: #3498db;
-      /* Change to your desired text color */
-    }
-
-    .output-container {
-      display: flex;
-      position: relative;
-    }
-
-    #transcript-output,
-    #summary-output {
-      width: 95%;
-      height: 250px;
-      padding: 12px 20px;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 6px;
-      background-color: #ffffff;
-      font-size: 16px;
-      resize: none;
-    }
-
-    label textarea {
-      vertical-align: middle;
-      letter-spacing: 1px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WizardAI - Your AI partner for transcribing and understanding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3B82F6',
+                        'primary-dark': '#2563EB',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <header class="bg-black bg-opacity-50 shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-4xl font-bold">
+                Wizard<span class="text-blue-400">AI</span>
+            </h1>
+            <p class="mt-2 text-gray-300">Your AI partner for transcribing and understanding</p>
+        </div>
+    </header>
 
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <h1><a href="#">Wizard<span>AI</span></a></h1>
-      </div>
-      
-    </div>
-  </header>
-  <form action="/transcribe" method="post" enctype="multipart/form-data">
-    <label for="file-upload">Upload a video:</label>
-    <input type="file" id="file-upload" name="video_file">
-    <label for="link-input">Or enter a video link:</label>
-    <input type="text" id="link-input" name="link-input">
-    <br>
-    <label for="options">Select an option:</label>
-    <select id="options" name="options">
-      <option value="transcribe">Transcribe</option>
-      <option value="translate">Translate</option>
-    </select>
-    <br>
-    <input type="submit" value="Submit">
-  </form>
-  <br>
-  <div class="output-container">
-    <label for="transcript-output" id="transcript-label">Transcript:
-      <textarea id="transcript-output" name="transcript-output" disabled>
-      {{ transcript }}
-    </textarea></label>
-    <label for="summary-output" id="summary-label">Summary:
-      <textarea id="summary-output" name="summary-output" disabled>
-      {{ summary }}
-    </textarea></label>
-    {% if audio_path %}
-        <audio controls>
-            <source src="{{ url_for('serve_audio', filename='summary.mp3') }}" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    {% endif %}
-  </div>
+    <main class="container mx-auto px-4 py-12">
+        <form action="/transcribe" method="post" enctype="multipart/form-data" class="max-w-2xl mx-auto space-y-8">
+            <div class="space-y-4">
+                <label class="block">
+                    <span class="text-lg font-medium">Upload a video:</span>
+                    <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                        <div class="space-y-1 text-center">
+                            <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="flex text-sm text-gray-600">
+                                <label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-primary hover:text-primary-dark focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-primary">
+                                    <span>Upload a file</span>
+                                    <input id="file-upload" name="video_file" type="file" class="sr-only">
+                                </label>
+                                <p class="pl-1">or drag and drop</p>
+                            </div>
+                            <p class="text-xs text-gray-500">MP4, WebM, or OGG up to 10MB</p>
+                        </div>
+                    </div>
+                </label>
 
+                <label class="block">
+                    <span class="text-lg font-medium">Or enter a video link:</span>
+                    <div class="mt-1 relative rounded-md shadow-sm">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input id="link-input" name="link-input" type="text" class="focus:ring-primary focus:border-primary block w-full pl-10 sm:text-sm border-gray-300 rounded-md bg-gray-700 text-white" placeholder="https://example.com/video.mp4">
+                    </div>
+                </label>
+
+                <label class="block">
+                    <span class="text-lg font-medium">Select an option:</span>
+                    <select id="options" name="options" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-primary focus:border-primary sm:text-sm rounded-md bg-gray-700 text-white">
+                        <option value="transcribe">Transcribe</option>
+                        <option value="translate">Translate</option>
+                    </select>
+                </label>
+            </div>
+
+            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                Submit
+            </button>
+        </form>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Transcript:</h2>
+                <textarea id="transcript-output" name="transcript-output" class="w-full h-64 p-4 bg-gray-700 text-white rounded-md resize-none" readonly>{{ transcript }}</textarea>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Summary:</h2>
+                <textarea id="summary-output" name="summary-output" class="w-full h-64 p-4 bg-gray-700 text-white rounded-md resize-none" readonly>{{ summary }}</textarea>
+            </div>
+        </div>
+
+        {% if audio_path %}
+        <div class="mt-8 flex justify-center">
+            <audio controls class="w-full max-w-md">
+                <source src="{{ url_for('serve_audio', filename='summary.mp3') }}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        {% endif %}
+    </main>
+
+    <footer class="bg-black bg-opacity-50 mt-12">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-300">
+            &copy; 2023 WizardAI. All rights reserved.
+        </div>
+    </footer>
 </body>
-
 </html>
